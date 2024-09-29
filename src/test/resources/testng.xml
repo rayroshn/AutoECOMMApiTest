@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="F:/RestAPIAutoEcomm/src/test/java/com/conduit/request/ApiTest">
+        <classes>
+            <class name="com.conduit.request.ApiTest.DeleteArticelApiTest">
+                <methods>
+                    <include name="deleteValidArticleTest"/>
+                    <include name="getSingleArticleBySlugTestNegative"/>
+                </methods>
+            </class>
+            <class name="com.conduit.request.ApiTest.addCommentAPITest">
+                <methods>
+                    <include name="addCommentAPITest"/>
+                    <include name="addCommentAPITestViaTemplate"/>
+                </methods>
+            </class>
+            <class name="com.conduit.request.ApiTest.articleAPITest">
+                <methods>
+                    <include name="createNewArticle"/>
+                    <include name="createNewArticleViaTemplate"/>
+                    <include name="createNewArticleRequestSchemaValidation"/>
+                    <include name="createNewArticleRequestNegativeSchemaValidation"/>
+                    <include name="createNewArticleResponseSchemaValidation"/>
+                    <include name="createNewArticleResponseNegativeSchemaValidation"/>
+                </methods>
+            </class>
+            <class name="com.conduit.request.ApiTest.articleAPITestWithBeforeSuiteSetup">
+                <methods>
+                    <include name="createNewArticle"/>
+                    <include name="createNewArticleViaTemplate"/>
+                    <include name="createNewArticleRequestSchemaValidation"/>
+                    <include name="createNewArticleRequestNegativeSchemaValidation"/>
+                    <include name="createNewArticleResponseSchemaValidation"/>
+                    <include name="createNewArticleResponseNegativeSchemaValidation"/>
+                </methods>
+            </class>
+            <class name="com.conduit.request.ApiTest.loginApiTest">
+                <methods>
+                    <include name="loginUser"/>
+                    <include name="setGetToken"/>
+                </methods>
+            </class>
+            <class name="com.conduit.request.ApiTest.updateArticleApiTest">
+                <methods>
+                    <include name="updateArticleTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

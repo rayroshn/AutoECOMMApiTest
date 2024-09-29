@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">All Test Suite</th></tr>
+<tr><td><a href="#t0">F:/RestAPIAutoEcomm/src/test/java/com/conduit/request/ApiTest</a></td><td class="num">18</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,716</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">F:/RestAPIAutoEcomm/src/test/java/com/conduit/request/ApiTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.conduit.request.ApiTest.DeleteArticelApiTest</td><td><a href="#m0">deleteValidArticleTest</a></td><td rowspan="1">1727611263179</td><td rowspan="1">1133</td></tr><tr><th colspan="4">F:/RestAPIAutoEcomm/src/test/java/com/conduit/request/ApiTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.conduit.request.ApiTest.DeleteArticelApiTest</td><td><a href="#m1">getSingleArticleBySlugTestNegative</a></td><td rowspan="1">1727611264408</td><td rowspan="1">3003</td></tr><tr class="passedodd"><td rowspan="2">com.conduit.request.ApiTest.addCommentAPITest</td><td><a href="#m2">addCommentAPITest</a></td><td rowspan="1">1727611267414</td><td rowspan="1">952</td></tr><tr class="passedodd"><td><a href="#m3">addCommentAPITestViaTemplate</a></td><td rowspan="1">1727611268428</td><td rowspan="1">850</td></tr><tr class="passedeven"><td rowspan="6">com.conduit.request.ApiTest.articleAPITest</td><td><a href="#m4">createNewArticle</a></td><td rowspan="1">1727611269280</td><td rowspan="1">871</td></tr><tr class="passedeven"><td><a href="#m5">createNewArticleRequestNegativeSchemaValidation</a></td><td rowspan="1">1727611271091</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m6">createNewArticleRequestSchemaValidation</a></td><td rowspan="1">1727611271034</td><td rowspan="1">56</td></tr><tr class="passedeven"><td><a href="#m7">createNewArticleResponseNegativeSchemaValidation</a></td><td rowspan="1">1727611272342</td><td rowspan="1">925</td></tr><tr class="passedeven"><td><a href="#m8">createNewArticleResponseSchemaValidation</a></td><td rowspan="1">1727611271098</td><td rowspan="1">1242</td></tr><tr class="passedeven"><td><a href="#m9">createNewArticleViaTemplate</a></td><td rowspan="1">1727611270153</td><td rowspan="1">880</td></tr><tr class="passedodd"><td rowspan="6">com.conduit.request.ApiTest.articleAPITestWithBeforeSuiteSetup</td><td><a href="#m10">createNewArticle</a></td><td rowspan="1">1727611273269</td><td rowspan="1">889</td></tr><tr class="passedodd"><td><a href="#m11">createNewArticleRequestNegativeSchemaValidation</a></td><td rowspan="1">1727611274990</td><td rowspan="1">4</td></tr><tr class="passedodd"><td><a href="#m12">createNewArticleRequestSchemaValidation</a></td><td rowspan="1">1727611274984</td><td rowspan="1">5</td></tr><tr class="passedodd"><td><a href="#m13">createNewArticleResponseNegativeSchemaValidation</a></td><td rowspan="1">1727611275827</td><td rowspan="1">864</td></tr><tr class="passedodd"><td><a href="#m14">createNewArticleResponseSchemaValidation</a></td><td rowspan="1">1727611274997</td><td rowspan="1">828</td></tr><tr class="passedodd"><td><a href="#m15">createNewArticleViaTemplate</a></td><td rowspan="1">1727611274160</td><td rowspan="1">823</td></tr><tr class="passedeven"><td rowspan="2">com.conduit.request.ApiTest.loginApiTest</td><td><a href="#m16">loginUser</a></td><td rowspan="1">1727611276692</td><td rowspan="1">1327</td></tr><tr class="passedeven"><td><a href="#m17">setGetToken</a></td><td rowspan="1">1727611278020</td><td rowspan="1">943</td></tr><tr class="passedodd"><td rowspan="1">com.conduit.request.ApiTest.updateArticleApiTest</td><td><a href="#m18">updateArticleTest</a></td><td rowspan="1">1727611278965</td><td rowspan="1">847</td></tr></tbody>
+</table>
+<h2>F:/RestAPIAutoEcomm/src/test/java/com/conduit/request/ApiTest</h2><h3 id="m0">com.conduit.request.ApiTest.DeleteArticelApiTest#deleteValidArticleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [204] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.conduit.request.ApiTest.DeleteArticelApiTest.deleteValidArticleTest(DeleteArticelApiTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.conduit.request.ApiTest.DeleteArticelApiTest#getSingleArticleBySlugTestNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.conduit.request.ApiTest.addCommentAPITest#addCommentAPITest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.conduit.request.ApiTest.addCommentAPITest#addCommentAPITestViaTemplate</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Comment(body=Optio sed quas neque suscipit adipisci provident pariatur.)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.conduit.request.ApiTest.articleAPITest#createNewArticle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.conduit.request.ApiTest.articleAPITest#createNewArticleRequestNegativeSchemaValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.conduit.request.ApiTest.articleAPITest#createNewArticleRequestSchemaValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.conduit.request.ApiTest.articleAPITest#createNewArticleResponseNegativeSchemaValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.conduit.request.Pojo.Request.Article@51406cdd</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.conduit.request.ApiTest.articleAPITest#createNewArticleResponseSchemaValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.conduit.request.Pojo.Request.Article@5066442d</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.conduit.request.ApiTest.articleAPITest#createNewArticleViaTemplate</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.conduit.request.Pojo.Request.Article@7262f848</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.conduit.request.ApiTest.articleAPITestWithBeforeSuiteSetup#createNewArticle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.conduit.request.ApiTest.articleAPITestWithBeforeSuiteSetup#createNewArticleRequestNegativeSchemaValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.conduit.request.ApiTest.articleAPITestWithBeforeSuiteSetup#createNewArticleRequestSchemaValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.conduit.request.ApiTest.articleAPITestWithBeforeSuiteSetup#createNewArticleResponseNegativeSchemaValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.conduit.request.Pojo.Request.Article@4a716a73</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.conduit.request.ApiTest.articleAPITestWithBeforeSuiteSetup#createNewArticleResponseSchemaValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.conduit.request.Pojo.Request.Article@340572ad</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.conduit.request.ApiTest.articleAPITestWithBeforeSuiteSetup#createNewArticleViaTemplate</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.conduit.request.Pojo.Request.Article@2d86f17b</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.conduit.request.ApiTest.loginApiTest#loginUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.conduit.request.ApiTest.loginApiTest#setGetToken</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.conduit.request.ApiTest.updateArticleApiTest#updateArticleTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.conduit.request.Pojo.Request.UpdateArticle.Article@6e4dfd4d</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

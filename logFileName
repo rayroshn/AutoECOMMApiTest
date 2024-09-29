@@ -1,0 +1,106 @@
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayroshhh@gmail.com",
+        "password": "$Thinair321"
+    }
+}
+HTTP/1.1 200 OK
+Date: Sat, 21 Sep 2024 12:00:09 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1726920009&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=SH2Zmi6hbLGAvKWw0h2qmtcEt4xrvQcsZzGh%2FWvT4%2Fk%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1726920009&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=SH2Zmi6hbLGAvKWw0h2qmtcEt4xrvQcsZzGh%2FWvT4%2Fk%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"129-6JkO64cud83WiBd587OLK7217QQ"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8c69e4a84ab3562c-SIN
+Content-Encoding: gzip
+
+{
+    "user": {
+        "email": "rayroshhh@gmail.com",
+        "username": "thinairr",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0MTgwfSwiaWF0IjoxNzI2OTIwMDA5LCJleHAiOjE3MzIxMDQwMDl9.iccJBgSAvYOTCWE98bLcKRKPI3kyHmKl6DNLjFblL6U"
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0MTgwfSwiaWF0IjoxNzI2OTIwMDA5LCJleHAiOjE3MzIxMDQwMDl9.iccJBgSAvYOTCWE98bLcKRKPI3kyHmKl6DNLjFblL6U
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Vanity FairvalidArticleTemplate",
+        "description": "Rem possimus exercitationem totam optio impedit.",
+        "body": "A repellat iste. Officia velit sunt commodi aliquid maiores rem enim. Earum impedit assumenda aut. Repudiandae dolores vel eos.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Sat, 21 Sep 2024 12:00:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 572
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1726920013&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=x4ar7d96hwVhJKGQtkHGr1NJ0fuc3CZkR7G%2BOE3PsWY%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1726920013&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=x4ar7d96hwVhJKGQtkHGr1NJ0fuc3CZkR7G%2BOE3PsWY%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"23c-AhigwJxepN1nPoICFDn2BCbdi7E"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8c69e4c40882a98a-SIN
+
+{
+    "article": {
+        "slug": "Vanity-FairvalidArticleTemplate-4180",
+        "title": "Vanity FairvalidArticleTemplate",
+        "description": "Rem possimus exercitationem totam optio impedit.",
+        "body": "A repellat iste. Officia velit sunt commodi aliquid maiores rem enim. Earum impedit assumenda aut. Repudiandae dolores vel eos.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-21T12:00:13.858Z",
+        "updatedAt": "2024-09-21T12:00:13.858Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "thinairr",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
