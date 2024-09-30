@@ -22,8 +22,8 @@ jobs:
           java-version: '11'  # Specify the JDK version your project uses
           distribution: 'temurin'  # You can use 'adopt' or 'zulu' as alternatives
 
-      - name: Create Log directory
-        run: mkdir -p src/test/resources/Log
+        #Commented as already exist in gituhub - name: Create Log directory
+        #Commented as already exist in gituhub run: mkdir -p src/test/resources/Log
         
       - name: Build with Maven
         run: mvn clean  # You can change this to 'mvn test' if you only want to run tests
