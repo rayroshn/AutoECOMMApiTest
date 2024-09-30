@@ -1,0 +1,1632 @@
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "password": "Vvbh@8989"
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 08:33:11 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685191&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=jcmIvPoZ74V2ybAm0ls%2F4F6kIDmLME7SXOLQ2sP9mD8%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685191&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=jcmIvPoZ74V2ybAm0ls%2F4F6kIDmLME7SXOLQ2sP9mD8%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"128-KYfOFUb2ALIhtGS4TSlRHWrRi/g"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2dddaacc9ce36-SIN
+Content-Encoding: gzip
+
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "username": "rayrosh4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ"
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.realworld.io/api/articles/Forest-5079
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://api.realworld.io/api/articles/Forest-5079
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Mon, 30 Sep 2024 08:33:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685194&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=8zyIYE7Iv5EhfTlI9gzK2UOdsVkRgj%2F0RvX7zLUQk1E%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685194&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=8zyIYE7Iv5EhfTlI9gzK2UOdsVkRgj%2F0RvX7zLUQk1E%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2ddec6f31833d-SIN
+
+{
+    
+}
+HTTP/1.1 404 Not Found
+Date: Mon, 30 Sep 2024 08:33:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685194&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=8zyIYE7Iv5EhfTlI9gzK2UOdsVkRgj%2F0RvX7zLUQk1E%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685194&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=8zyIYE7Iv5EhfTlI9gzK2UOdsVkRgj%2F0RvX7zLUQk1E%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2ddec6f31833d-SIN
+
+{
+    
+}
+Request method:	GET
+Request URI:	https://api.realworld.io/api/articles/Forest-5079
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://api.realworld.io/api/articles/Forest-5079
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Mon, 30 Sep 2024 08:33:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685195&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=qsm7Bqkzp7fla6fdYhLoaNOxHRSu7VRJSxvL%2BLGMFLo%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685195&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=qsm7Bqkzp7fla6fdYhLoaNOxHRSu7VRJSxvL%2BLGMFLo%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"24-WwkKlnN0sbKzUZbyZqRl66DQxQA"
+Cache-Control: max-age=60
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2ddf39e23ce86-SIN
+
+{
+    "errors": {
+        "article": [
+            "not found"
+        ]
+    }
+}
+HTTP/1.1 404 Not Found
+Date: Mon, 30 Sep 2024 08:33:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685195&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=qsm7Bqkzp7fla6fdYhLoaNOxHRSu7VRJSxvL%2BLGMFLo%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685195&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=qsm7Bqkzp7fla6fdYhLoaNOxHRSu7VRJSxvL%2BLGMFLo%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"24-WwkKlnN0sbKzUZbyZqRl66DQxQA"
+Cache-Control: max-age=60
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2ddf39e23ce86-SIN
+
+{
+    "errors": {
+        "article": [
+            "not found"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles/Corporate-Research-Facilitator-4180/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "comment": {
+        "body": "Aut saepe qui ullam eaque beatae rerum."
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles/Corporate-Research-Facilitator-4180/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "comment": {
+        "body": "Aut saepe qui ullam eaque beatae rerum."
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 08:33:18 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685198&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=bLZ6k4vSMkHi5Qtmgp0PTZ3SpKr2e3epdg3N5PzudqI%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685198&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=bLZ6k4vSMkHi5Qtmgp0PTZ3SpKr2e3epdg3N5PzudqI%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"110-SMdKtHJK//lcrfONaajdg0e62W4"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de061d8940e2-SIN
+Content-Encoding: gzip
+
+{
+    "comment": {
+        "id": 3084,
+        "createdAt": "2024-09-30T08:33:18.153Z",
+        "updatedAt": "2024-09-30T08:33:18.153Z",
+        "body": "Aut saepe qui ullam eaque beatae rerum.",
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 08:33:18 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685198&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=bLZ6k4vSMkHi5Qtmgp0PTZ3SpKr2e3epdg3N5PzudqI%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685198&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=bLZ6k4vSMkHi5Qtmgp0PTZ3SpKr2e3epdg3N5PzudqI%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"110-SMdKtHJK//lcrfONaajdg0e62W4"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de061d8940e2-SIN
+Content-Encoding: gzip
+
+{
+    "comment": {
+        "id": 3084,
+        "createdAt": "2024-09-30T08:33:18.153Z",
+        "updatedAt": "2024-09-30T08:33:18.153Z",
+        "body": "Aut saepe qui ullam eaque beatae rerum.",
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles/Valentin-5079/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "comment": {
+        "body": "Aut saepe qui ullam eaque beatae rerum."
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles/Valentin-5079/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "comment": {
+        "body": "Aut saepe qui ullam eaque beatae rerum."
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 08:33:19 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685199&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=GaZDWp%2Fi5GYuN%2BvfgzYnrsEWqaWPpVlhB%2BiNvODmmUw%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685199&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=GaZDWp%2Fi5GYuN%2BvfgzYnrsEWqaWPpVlhB%2BiNvODmmUw%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"110-FEE1N1AfrmwIwHVNdvNor1bRNVE"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de0c0c0540a3-SIN
+Content-Encoding: gzip
+
+{
+    "comment": {
+        "id": 3085,
+        "createdAt": "2024-09-30T08:33:19.105Z",
+        "updatedAt": "2024-09-30T08:33:19.105Z",
+        "body": "Aut saepe qui ullam eaque beatae rerum.",
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 08:33:19 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685199&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=GaZDWp%2Fi5GYuN%2BvfgzYnrsEWqaWPpVlhB%2BiNvODmmUw%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685199&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=GaZDWp%2Fi5GYuN%2BvfgzYnrsEWqaWPpVlhB%2BiNvODmmUw%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"110-FEE1N1AfrmwIwHVNdvNor1bRNVE"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de0c0c0540a3-SIN
+Content-Encoding: gzip
+
+{
+    "comment": {
+        "id": 3085,
+        "createdAt": "2024-09-30T08:33:19.105Z",
+        "updatedAt": "2024-09-30T08:33:19.105Z",
+        "body": "Aut saepe qui ullam eaque beatae rerum.",
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Senior Solutions Supervisor",
+        "description": "[Ut aspernatur ipsum. Libero animi et. Quibusdam ut non optio animi quod qui beatae., Laudantium aut asperiores. Officiis tenetur quod fugiat. Maxime illo a voluptatem autem. Occaecati earum suscipit. Ducimus neque quasi impedit., Veritatis asperiores dolor illum. Aut dolor omnis alias in fuga impedit. Cupiditate officia autem enim accusantium eveniet. Maiores quas repudiandae ea.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Senior Solutions Supervisor",
+        "description": "[Ut aspernatur ipsum. Libero animi et. Quibusdam ut non optio animi quod qui beatae., Laudantium aut asperiores. Officiis tenetur quod fugiat. Maxime illo a voluptatem autem. Occaecati earum suscipit. Ducimus neque quasi impedit., Veritatis asperiores dolor illum. Aut dolor omnis alias in fuga impedit. Cupiditate officia autem enim accusantium eveniet. Maiores quas repudiandae ea.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 08:33:20 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 781
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685199&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=GaZDWp%2Fi5GYuN%2BvfgzYnrsEWqaWPpVlhB%2BiNvODmmUw%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685199&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=GaZDWp%2Fi5GYuN%2BvfgzYnrsEWqaWPpVlhB%2BiNvODmmUw%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"30d-vtE8SfpYQHcXNGJIey4UrTEJD/A"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de112fdece89-SIN
+
+{
+    "article": {
+        "slug": "Senior-Solutions-Supervisor-5079",
+        "title": "Senior Solutions Supervisor",
+        "description": "[Ut aspernatur ipsum. Libero animi et. Quibusdam ut non optio animi quod qui beatae., Laudantium aut asperiores. Officiis tenetur quod fugiat. Maxime illo a voluptatem autem. Occaecati earum suscipit. Ducimus neque quasi impedit., Veritatis asperiores dolor illum. Aut dolor omnis alias in fuga impedit. Cupiditate officia autem enim accusantium eveniet. Maiores quas repudiandae ea.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T08:33:19.921Z",
+        "updatedAt": "2024-09-30T08:33:19.921Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 08:33:20 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 781
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685199&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=GaZDWp%2Fi5GYuN%2BvfgzYnrsEWqaWPpVlhB%2BiNvODmmUw%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685199&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=GaZDWp%2Fi5GYuN%2BvfgzYnrsEWqaWPpVlhB%2BiNvODmmUw%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"30d-vtE8SfpYQHcXNGJIey4UrTEJD/A"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de112fdece89-SIN
+
+{
+    "article": {
+        "slug": "Senior-Solutions-Supervisor-5079",
+        "title": "Senior Solutions Supervisor",
+        "description": "[Ut aspernatur ipsum. Libero animi et. Quibusdam ut non optio animi quod qui beatae., Laudantium aut asperiores. Officiis tenetur quod fugiat. Maxime illo a voluptatem autem. Occaecati earum suscipit. Ducimus neque quasi impedit., Veritatis asperiores dolor illum. Aut dolor omnis alias in fuga impedit. Cupiditate officia autem enim accusantium eveniet. Maiores quas repudiandae ea.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T08:33:19.921Z",
+        "updatedAt": "2024-09-30T08:33:19.921Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Cleveland",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Cleveland",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 422 Unprocessable Entity
+Date: Mon, 30 Sep 2024 08:33:20 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 39
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685200&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XkLCVs4AUh0BMaHM7jQCcYsBJA3S2YICLlebhGNCU1M%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685200&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XkLCVs4AUh0BMaHM7jQCcYsBJA3S2YICLlebhGNCU1M%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"27-BNeuaWQ7DHvW/r+pl+qdJiF06Is"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de16ba614c2f-SIN
+
+{
+    "errors": {
+        "title": [
+            "must be unique"
+        ]
+    }
+}
+HTTP/1.1 422 Unprocessable Entity
+Date: Mon, 30 Sep 2024 08:33:20 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 39
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685200&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XkLCVs4AUh0BMaHM7jQCcYsBJA3S2YICLlebhGNCU1M%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685200&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XkLCVs4AUh0BMaHM7jQCcYsBJA3S2YICLlebhGNCU1M%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"27-BNeuaWQ7DHvW/r+pl+qdJiF06Is"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de16ba614c2f-SIN
+
+{
+    "errors": {
+        "title": [
+            "must be unique"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Georgine",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Georgine",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 08:33:22 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 522
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685201&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=l3t64ydEEV1kU7VpwWQapSREZ6ajyMG2Mdm6ltzkT78%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685201&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=l3t64ydEEV1kU7VpwWQapSREZ6ajyMG2Mdm6ltzkT78%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"20a-psx+B6A7hMCKdIe5ZR4ftdMtkFE"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de1d9acba8f1-SIN
+
+{
+    "article": {
+        "slug": "Georgine-5079",
+        "title": "Georgine",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T08:33:21.921Z",
+        "updatedAt": "2024-09-30T08:33:21.921Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 08:33:22 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 522
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685201&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=l3t64ydEEV1kU7VpwWQapSREZ6ajyMG2Mdm6ltzkT78%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685201&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=l3t64ydEEV1kU7VpwWQapSREZ6ajyMG2Mdm6ltzkT78%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"20a-psx+B6A7hMCKdIe5ZR4ftdMtkFE"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de1d9acba8f1-SIN
+
+{
+    "article": {
+        "slug": "Georgine-5079",
+        "title": "Georgine",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T08:33:21.921Z",
+        "updatedAt": "2024-09-30T08:33:21.921Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Phyliss",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Phyliss",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 08:33:23 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 520
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685203&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=7g0T0V9oPItW0PgVhgfToRRxxGkMQ603dokf4NiKFQE%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685203&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=7g0T0V9oPItW0PgVhgfToRRxxGkMQ603dokf4NiKFQE%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"208-xG/DTM4xb1vrMxvcWoqFY2ZHxkg"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de270ebf461f-SIN
+
+{
+    "article": {
+        "slug": "Phyliss-5079",
+        "title": "Phyliss",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T08:33:23.415Z",
+        "updatedAt": "2024-09-30T08:33:23.415Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 08:33:23 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 520
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685203&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=7g0T0V9oPItW0PgVhgfToRRxxGkMQ603dokf4NiKFQE%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685203&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=7g0T0V9oPItW0PgVhgfToRRxxGkMQ603dokf4NiKFQE%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"208-xG/DTM4xb1vrMxvcWoqFY2ZHxkg"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de270ebf461f-SIN
+
+{
+    "article": {
+        "slug": "Phyliss-5079",
+        "title": "Phyliss",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T08:33:23.415Z",
+        "updatedAt": "2024-09-30T08:33:23.415Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Legacy Assurance Supervisor",
+        "description": "[Ut aspernatur ipsum. Libero animi et. Quibusdam ut non optio animi quod qui beatae., Laudantium aut asperiores. Officiis tenetur quod fugiat. Maxime illo a voluptatem autem. Occaecati earum suscipit. Ducimus neque quasi impedit., Veritatis asperiores dolor illum. Aut dolor omnis alias in fuga impedit. Cupiditate officia autem enim accusantium eveniet. Maiores quas repudiandae ea.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Legacy Assurance Supervisor",
+        "description": "[Ut aspernatur ipsum. Libero animi et. Quibusdam ut non optio animi quod qui beatae., Laudantium aut asperiores. Officiis tenetur quod fugiat. Maxime illo a voluptatem autem. Occaecati earum suscipit. Ducimus neque quasi impedit., Veritatis asperiores dolor illum. Aut dolor omnis alias in fuga impedit. Cupiditate officia autem enim accusantium eveniet. Maiores quas repudiandae ea.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 08:33:24 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 781
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685204&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=vVntNw%2F%2FPCdRiOUrTyJllQRGofsGMfvqcNxpFLpRtqg%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685204&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=vVntNw%2F%2FPCdRiOUrTyJllQRGofsGMfvqcNxpFLpRtqg%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"30d-Mrpv3fOOq18ipbhEpmYIENz7qOM"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de2c7cca3ff4-SIN
+
+{
+    "article": {
+        "slug": "Legacy-Assurance-Supervisor-5079",
+        "title": "Legacy Assurance Supervisor",
+        "description": "[Ut aspernatur ipsum. Libero animi et. Quibusdam ut non optio animi quod qui beatae., Laudantium aut asperiores. Officiis tenetur quod fugiat. Maxime illo a voluptatem autem. Occaecati earum suscipit. Ducimus neque quasi impedit., Veritatis asperiores dolor illum. Aut dolor omnis alias in fuga impedit. Cupiditate officia autem enim accusantium eveniet. Maiores quas repudiandae ea.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T08:33:24.350Z",
+        "updatedAt": "2024-09-30T08:33:24.350Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 08:33:24 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 781
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685204&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=vVntNw%2F%2FPCdRiOUrTyJllQRGofsGMfvqcNxpFLpRtqg%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685204&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=vVntNw%2F%2FPCdRiOUrTyJllQRGofsGMfvqcNxpFLpRtqg%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"30d-Mrpv3fOOq18ipbhEpmYIENz7qOM"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de2c7cca3ff4-SIN
+
+{
+    "article": {
+        "slug": "Legacy-Assurance-Supervisor-5079",
+        "title": "Legacy Assurance Supervisor",
+        "description": "[Ut aspernatur ipsum. Libero animi et. Quibusdam ut non optio animi quod qui beatae., Laudantium aut asperiores. Officiis tenetur quod fugiat. Maxime illo a voluptatem autem. Occaecati earum suscipit. Ducimus neque quasi impedit., Veritatis asperiores dolor illum. Aut dolor omnis alias in fuga impedit. Cupiditate officia autem enim accusantium eveniet. Maiores quas repudiandae ea.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T08:33:24.350Z",
+        "updatedAt": "2024-09-30T08:33:24.350Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Joshua",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Joshua",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 422 Unprocessable Entity
+Date: Mon, 30 Sep 2024 08:33:25 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 39
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685205&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=o11vHk6W2kUg27uC5D6W%2FTJ2Kmkj6TZP7H2DyNGT%2F5w%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685205&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=o11vHk6W2kUg27uC5D6W%2FTJ2Kmkj6TZP7H2DyNGT%2F5w%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"27-BNeuaWQ7DHvW/r+pl+qdJiF06Is"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de329efdcdf9-SIN
+
+{
+    "errors": {
+        "title": [
+            "must be unique"
+        ]
+    }
+}
+HTTP/1.1 422 Unprocessable Entity
+Date: Mon, 30 Sep 2024 08:33:25 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 39
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685205&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=o11vHk6W2kUg27uC5D6W%2FTJ2Kmkj6TZP7H2DyNGT%2F5w%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685205&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=o11vHk6W2kUg27uC5D6W%2FTJ2Kmkj6TZP7H2DyNGT%2F5w%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"27-BNeuaWQ7DHvW/r+pl+qdJiF06Is"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de329efdcdf9-SIN
+
+{
+    "errors": {
+        "title": [
+            "must be unique"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Starla",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Starla",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 08:33:26 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 518
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685206&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4GHI6rfpgHSaXobxmq3uTl7JLT8qbKJC8WrmOgv5Bjs%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685206&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4GHI6rfpgHSaXobxmq3uTl7JLT8qbKJC8WrmOgv5Bjs%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"206-mHvYF5qd04A/JX5YWSg24RpHxbw"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de37ca013f76-SIN
+
+{
+    "article": {
+        "slug": "Starla-5079",
+        "title": "Starla",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T08:33:26.104Z",
+        "updatedAt": "2024-09-30T08:33:26.104Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 08:33:26 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 518
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685206&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4GHI6rfpgHSaXobxmq3uTl7JLT8qbKJC8WrmOgv5Bjs%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685206&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4GHI6rfpgHSaXobxmq3uTl7JLT8qbKJC8WrmOgv5Bjs%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"206-mHvYF5qd04A/JX5YWSg24RpHxbw"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de37ca013f76-SIN
+
+{
+    "article": {
+        "slug": "Starla-5079",
+        "title": "Starla",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T08:33:26.104Z",
+        "updatedAt": "2024-09-30T08:33:26.104Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Kina",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Kina",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 08:33:27 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 514
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685206&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4GHI6rfpgHSaXobxmq3uTl7JLT8qbKJC8WrmOgv5Bjs%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685206&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4GHI6rfpgHSaXobxmq3uTl7JLT8qbKJC8WrmOgv5Bjs%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"202-+DOJ35+empHClETC8fUGUEbbXxk"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de3d5c179f85-SIN
+
+{
+    "article": {
+        "slug": "Kina-5079",
+        "title": "Kina",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T08:33:26.989Z",
+        "updatedAt": "2024-09-30T08:33:26.989Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 08:33:27 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 514
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685206&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4GHI6rfpgHSaXobxmq3uTl7JLT8qbKJC8WrmOgv5Bjs%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685206&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4GHI6rfpgHSaXobxmq3uTl7JLT8qbKJC8WrmOgv5Bjs%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"202-+DOJ35+empHClETC8fUGUEbbXxk"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de3d5c179f85-SIN
+
+{
+    "article": {
+        "slug": "Kina-5079",
+        "title": "Kina",
+        "description": "Culpa officiis beatae labore occaecati officiis ea.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T08:33:26.989Z",
+        "updatedAt": "2024-09-30T08:33:26.989Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "password": "Vvbh@8989"
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "password": "Vvbh@8989"
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 08:33:28 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685207&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=I5M%2FNsDL0m3acLlPkROIozpBipxO4So7LfcyGTFIfdY%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685207&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=I5M%2FNsDL0m3acLlPkROIozpBipxO4So7LfcyGTFIfdY%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"128-LgVqqXwBcVtzSrd+vMIk45YXtmU"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de42ffcbce5a-SIN
+Content-Encoding: gzip
+
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "username": "rayrosh4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MjA3LCJleHAiOjE3MzI4NjkyMDd9.6EmvAWz8_61HKOl4S6xlCaWwrSHr9umxRZREvSxukIk"
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 08:33:28 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685207&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=I5M%2FNsDL0m3acLlPkROIozpBipxO4So7LfcyGTFIfdY%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685207&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=I5M%2FNsDL0m3acLlPkROIozpBipxO4So7LfcyGTFIfdY%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"128-LgVqqXwBcVtzSrd+vMIk45YXtmU"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de42ffcbce5a-SIN
+Content-Encoding: gzip
+
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "username": "rayrosh4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MjA3LCJleHAiOjE3MzI4NjkyMDd9.6EmvAWz8_61HKOl4S6xlCaWwrSHr9umxRZREvSxukIk"
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "password": "Vvbh@8989"
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "password": "Vvbh@8989"
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 08:33:29 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685209&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=cIHcmgC2X16DpYxLyQBymvZMAAoaHQ3o8ygaCEc07QA%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685209&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=cIHcmgC2X16DpYxLyQBymvZMAAoaHQ3o8ygaCEc07QA%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"128-wyhW9cRaW1+2xTPiEkuPWphTtWw"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de48ab8a4487-SIN
+Content-Encoding: gzip
+
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "username": "rayrosh4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MjA5LCJleHAiOjE3MzI4NjkyMDl9.dnAmqzPAQLZyZ90JUZdEyqmc1dgEcZPfqJOO6zzfIjo"
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 08:33:29 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685209&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=cIHcmgC2X16DpYxLyQBymvZMAAoaHQ3o8ygaCEc07QA%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685209&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=cIHcmgC2X16DpYxLyQBymvZMAAoaHQ3o8ygaCEc07QA%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"128-wyhW9cRaW1+2xTPiEkuPWphTtWw"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de48ab8a4487-SIN
+Content-Encoding: gzip
+
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "username": "rayrosh4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MjA5LCJleHAiOjE3MzI4NjkyMDl9.dnAmqzPAQLZyZ90JUZdEyqmc1dgEcZPfqJOO6zzfIjo"
+    }
+}
+Request method:	PUT
+Request URI:	https://api.realworld.io/api/articles/Luke-5079
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae."
+    }
+}
+Request method:	PUT
+Request URI:	https://api.realworld.io/api/articles/Luke-5079
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg1MTkxLCJleHAiOjE3MzI4NjkxOTF9.kjhVZip8mKhp_pCoy2T7REH9gOrxrTL1iohCWpFMbDQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae."
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 08:33:30 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685210&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=hXYbPvH3xx3sk4gdMbxrBrRsZnePBeptpNOqklS54Bc%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685210&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=hXYbPvH3xx3sk4gdMbxrBrRsZnePBeptpNOqklS54Bc%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"1e8-2SotNRWQv4cfx/Y0t042k649B+U"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de503ff4899a-SIN
+Content-Encoding: gzip
+
+{
+    "article": {
+        "slug": "Luke-5079",
+        "title": "Luke",
+        "description": "Quidem quis pariatur distinctio accusantium.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            
+        ],
+        "createdAt": "2024-09-26T04:52:29.189Z",
+        "updatedAt": "2024-09-30T08:33:30.023Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 08:33:30 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727685210&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=hXYbPvH3xx3sk4gdMbxrBrRsZnePBeptpNOqklS54Bc%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727685210&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=hXYbPvH3xx3sk4gdMbxrBrRsZnePBeptpNOqklS54Bc%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"1e8-2SotNRWQv4cfx/Y0t042k649B+U"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb2de503ff4899a-SIN
+Content-Encoding: gzip
+
+{
+    "article": {
+        "slug": "Luke-5079",
+        "title": "Luke",
+        "description": "Quidem quis pariatur distinctio accusantium.",
+        "body": "Unde maiores quisquam itaque aut quam atque suscipit. Magnam ipsam enim blanditiis quo. Quia minus est enim repudiandae.",
+        "tagList": [
+            
+        ],
+        "createdAt": "2024-09-26T04:52:29.189Z",
+        "updatedAt": "2024-09-30T08:33:30.023Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
