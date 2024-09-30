@@ -20,28 +20,21 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'  # Specify the JDK version your project uses
-          distribution: 'temurin'  # You can use 'adopt' or 'zulu' as alternatives
+          distribution: 'temurin'  # Use 'temurin', 'adopt', or 'zulu'
 
-      - name: Create Log directory
-        run: mkdir -p src/test/resources/Log
+      - name: Create Log directory (Windows)
+        run: |
+          if (-Not (Test-Path -Path "src/test/resources/Log")) { New-Item -Path "src/test/resources/Log" -ItemType Directory }
+        shell: pwsh  # Use PowerShell as the shell on Windows
 
       - name: Build with Maven
-        run: mvn clean  # You can change this to 'mvn test' if you only want to run tests
+        run: mvn clean  # Clean the project
 
       - name: Run API tests
-        run: mvn test
+        run: mvn test  # Run the tests
 
-        #Commented as already exist in gituhub - name: Create Log directory
-        #Commented as already exist in gituhub run: mkdir -p src/test/resources/Log
-      - name: Create Log directory
-        run: |
-          if [ ! -d "src/test/resources/Log" ]; then
-            mkdir -p src/test/resources/Log
-          fi
-
-      # Upload log files as artifacts
       - name: Upload Log Files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3  # Ensure you're using the latest version
         with:
           name: test-logs
           path: src/test/resources/Log/*.log  # Adjust the path if needed
