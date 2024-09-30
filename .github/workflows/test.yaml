@@ -23,7 +23,7 @@ jobs:
           distribution: 'temurin'  # You can use 'adopt' or 'zulu' as alternatives
 
       - name: Build with Maven
-        run: mvn clean install  # You can change this to 'mvn test' if you only want to run tests
+        run: mvn clean  # You can change this to 'mvn test' if you only want to run tests
 
       - name: Run API tests
         run: mvn test
