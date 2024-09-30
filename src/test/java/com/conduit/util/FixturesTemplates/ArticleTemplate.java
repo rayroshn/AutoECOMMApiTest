@@ -15,11 +15,13 @@ import java.util.UUID;
 public class ArticleTemplate implements TemplateLoader {
 
 
+
+
     private Object[] getFirstNames(){
         Faker faker= new Faker();
         List<String> list= new ArrayList<>();
         for(int i=0;i<10;i++){
-            list.add(faker.name().firstName());
+            list.add(faker.name().firstName() + faker.name().lastName()+faker.name().title());
         }
         return list.toArray();
     }

@@ -1,0 +1,170 @@
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "password": "Vvbh@8989"
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 09:26:19 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727688379&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=UPfgxkXQCldBsnTiFfLj1ecSjhUh4eRR9ABsyD2BCV0%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727688379&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=UPfgxkXQCldBsnTiFfLj1ecSjhUh4eRR9ABsyD2BCV0%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"128-zmX3PNj1MPeD3069ajJTHzSkm6k"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb32bad28673f6f-SIN
+Content-Encoding: gzip
+
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "username": "rayrosh4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg4Mzc5LCJleHAiOjE3MzI4NzIzNzl9.7H8T6YRlYcBjKxQ1jpToMZzxarsPExaDDJwDPjwIDZI"
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg4Mzc5LCJleHAiOjE3MzI4NzIzNzl9.7H8T6YRlYcBjKxQ1jpToMZzxarsPExaDDJwDPjwIDZI
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg4Mzc5LCJleHAiOjE3MzI4NzIzNzl9.7H8T6YRlYcBjKxQ1jpToMZzxarsPExaDDJwDPjwIDZI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Roland[Ljava.lang.Object;@7843b65e",
+        "description": "At voluptatem veniam laudantium sit animi quibusdam quia vel.",
+        "body": "Quis unde eius ullam. Est sed est cupiditate dignissimos nemo minima accusantium. Consequatur a earum. Eos ex asperiores non qui est.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg4Mzc5LCJleHAiOjE3MzI4NzIzNzl9.7H8T6YRlYcBjKxQ1jpToMZzxarsPExaDDJwDPjwIDZI
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njg4Mzc5LCJleHAiOjE3MzI4NzIzNzl9.7H8T6YRlYcBjKxQ1jpToMZzxarsPExaDDJwDPjwIDZI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Roland[Ljava.lang.Object;@7843b65e",
+        "description": "At voluptatem veniam laudantium sit animi quibusdam quia vel.",
+        "body": "Quis unde eius ullam. Est sed est cupiditate dignissimos nemo minima accusantium. Consequatur a earum. Eos ex asperiores non qui est.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 09:26:22 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 595
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727688381&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=0fp0jYEquKVL2Fi9w5qSTF4FN5WRHhwu%2F6YvSzoBCYs%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727688381&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=0fp0jYEquKVL2Fi9w5qSTF4FN5WRHhwu%2F6YvSzoBCYs%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"253-WMzyIAjUe7lY/YVjZi75yOshLuU"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb32bc10d0391b3-SIN
+
+{
+    "article": {
+        "slug": "RolandLjava.lang.Object@7843b65e-5079",
+        "title": "Roland[Ljava.lang.Object;@7843b65e",
+        "description": "At voluptatem veniam laudantium sit animi quibusdam quia vel.",
+        "body": "Quis unde eius ullam. Est sed est cupiditate dignissimos nemo minima accusantium. Consequatur a earum. Eos ex asperiores non qui est.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T09:26:21.999Z",
+        "updatedAt": "2024-09-30T09:26:21.999Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 09:26:22 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 595
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727688381&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=0fp0jYEquKVL2Fi9w5qSTF4FN5WRHhwu%2F6YvSzoBCYs%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727688381&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=0fp0jYEquKVL2Fi9w5qSTF4FN5WRHhwu%2F6YvSzoBCYs%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"253-WMzyIAjUe7lY/YVjZi75yOshLuU"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb32bc10d0391b3-SIN
+
+{
+    "article": {
+        "slug": "RolandLjava.lang.Object@7843b65e-5079",
+        "title": "Roland[Ljava.lang.Object;@7843b65e",
+        "description": "At voluptatem veniam laudantium sit animi quibusdam quia vel.",
+        "body": "Quis unde eius ullam. Est sed est cupiditate dignissimos nemo minima accusantium. Consequatur a earum. Eos ex asperiores non qui est.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T09:26:21.999Z",
+        "updatedAt": "2024-09-30T09:26:21.999Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
