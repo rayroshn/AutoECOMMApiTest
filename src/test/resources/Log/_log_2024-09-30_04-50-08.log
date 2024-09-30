@@ -1,0 +1,1686 @@
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "password": "Vvbh@8989"
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 11:50:12 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697012&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=DEWyjEoZLaIsRBSvFiAQLlbyKwNQ8sJOCJDZuApTWns%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697012&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=DEWyjEoZLaIsRBSvFiAQLlbyKwNQ8sJOCJDZuApTWns%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"128-4zrOr8L39gwqXINFCSHAXq7L41w"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fe753dd6833f-SIN
+Content-Encoding: gzip
+
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "username": "rayrosh4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw"
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.realworld.io/api/articles/LenManteSenior-Integration-Facilitator-5079
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://api.realworld.io/api/articles/LenManteSenior-Integration-Facilitator-5079
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 No Content
+Date: Mon, 30 Sep 2024 11:50:15 GMT
+Content-Length: 0
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697015&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=tp3IY1eXIqGlFPQFeEMGRhvrBZBIaoIBhpcEwC0rDM0%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697015&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=tp3IY1eXIqGlFPQFeEMGRhvrBZBIaoIBhpcEwC0rDM0%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fe860ecd9e34-SIN
+HTTP/1.1 204 No Content
+Date: Mon, 30 Sep 2024 11:50:15 GMT
+Content-Length: 0
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697015&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=tp3IY1eXIqGlFPQFeEMGRhvrBZBIaoIBhpcEwC0rDM0%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697015&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=tp3IY1eXIqGlFPQFeEMGRhvrBZBIaoIBhpcEwC0rDM0%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fe860ecd9e34-SIN
+Request method:	GET
+Request URI:	https://api.realworld.io/api/articles/LenManteSenior-Integration-Facilitator-5079
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://api.realworld.io/api/articles/LenManteSenior-Integration-Facilitator-5079
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Mon, 30 Sep 2024 11:50:18 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697018&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=WQiytpcfsJLYLbxmITkWcqFPz7fiPInNuYbdQhYS4Mo%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697018&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=WQiytpcfsJLYLbxmITkWcqFPz7fiPInNuYbdQhYS4Mo%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"24-WwkKlnN0sbKzUZbyZqRl66DQxQA"
+Cache-Control: max-age=60
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fe985adda988-SIN
+
+{
+    "errors": {
+        "article": [
+            "not found"
+        ]
+    }
+}
+HTTP/1.1 404 Not Found
+Date: Mon, 30 Sep 2024 11:50:18 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697018&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=WQiytpcfsJLYLbxmITkWcqFPz7fiPInNuYbdQhYS4Mo%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697018&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=WQiytpcfsJLYLbxmITkWcqFPz7fiPInNuYbdQhYS4Mo%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"24-WwkKlnN0sbKzUZbyZqRl66DQxQA"
+Cache-Control: max-age=60
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fe985adda988-SIN
+
+{
+    "errors": {
+        "article": [
+            "not found"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles/Corporate-Research-Facilitator-4180/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "comment": {
+        "body": "Quia occaecati nemo est quod in eos aut."
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles/Corporate-Research-Facilitator-4180/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "comment": {
+        "body": "Quia occaecati nemo est quod in eos aut."
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 11:50:21 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697020&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=pHnzUB0KWidNP8eP8O30eZfZb33e4pXncb55Tcu60u0%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697020&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=pHnzUB0KWidNP8eP8O30eZfZb33e4pXncb55Tcu60u0%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"111-Ao3J7iZ6Iclh8CHAKC+GS3H0/4U"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3feaad9ea3dce-SIN
+Content-Encoding: gzip
+
+{
+    "comment": {
+        "id": 3102,
+        "createdAt": "2024-09-30T11:50:20.995Z",
+        "updatedAt": "2024-09-30T11:50:20.995Z",
+        "body": "Quia occaecati nemo est quod in eos aut.",
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 11:50:21 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697020&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=pHnzUB0KWidNP8eP8O30eZfZb33e4pXncb55Tcu60u0%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697020&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=pHnzUB0KWidNP8eP8O30eZfZb33e4pXncb55Tcu60u0%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"111-Ao3J7iZ6Iclh8CHAKC+GS3H0/4U"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3feaad9ea3dce-SIN
+Content-Encoding: gzip
+
+{
+    "comment": {
+        "id": 3102,
+        "createdAt": "2024-09-30T11:50:20.995Z",
+        "updatedAt": "2024-09-30T11:50:20.995Z",
+        "body": "Quia occaecati nemo est quod in eos aut.",
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles/Valentin-5079/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "comment": {
+        "body": "Quia occaecati nemo est quod in eos aut."
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles/Valentin-5079/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "comment": {
+        "body": "Quia occaecati nemo est quod in eos aut."
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 11:50:22 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697021&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=I98bNmqk3Lu0ZeFPVirjFjDcJy8Gu3nLfFYZbrOyVhk%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697021&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=I98bNmqk3Lu0ZeFPVirjFjDcJy8Gu3nLfFYZbrOyVhk%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"111-t/xMjHrEmDEpT4nzK/WByYzDQ/k"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3feb0ffc38958-SIN
+Content-Encoding: gzip
+
+{
+    "comment": {
+        "id": 3103,
+        "createdAt": "2024-09-30T11:50:21.980Z",
+        "updatedAt": "2024-09-30T11:50:21.980Z",
+        "body": "Quia occaecati nemo est quod in eos aut.",
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 11:50:22 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697021&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=I98bNmqk3Lu0ZeFPVirjFjDcJy8Gu3nLfFYZbrOyVhk%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697021&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=I98bNmqk3Lu0ZeFPVirjFjDcJy8Gu3nLfFYZbrOyVhk%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"111-t/xMjHrEmDEpT4nzK/WByYzDQ/k"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3feb0ffc38958-SIN
+Content-Encoding: gzip
+
+{
+    "comment": {
+        "id": 3103,
+        "createdAt": "2024-09-30T11:50:21.980Z",
+        "updatedAt": "2024-09-30T11:50:21.980Z",
+        "body": "Quia occaecati nemo est quod in eos aut.",
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Direct Directives Orchestrator",
+        "description": "[Sed et nihil beatae. Enim ut qui. Ab non vel magni in laudantium. Non quaerat ea non voluptatem omnis rem deleniti. Et aut rerum., Consectetur quos placeat a quas magni. Nisi qui quia et porro ipsum. Et voluptatem ut qui non libero laudantium., Ut dicta et enim tempora voluptatem. Nulla sapiente doloribus veritatis unde. Autem sequi minima aut. Voluptatem placeat natus. Et cumque fugiat.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Direct Directives Orchestrator",
+        "description": "[Sed et nihil beatae. Enim ut qui. Ab non vel magni in laudantium. Non quaerat ea non voluptatem omnis rem deleniti. Et aut rerum., Consectetur quos placeat a quas magni. Nisi qui quia et porro ipsum. Et voluptatem ut qui non libero laudantium., Ut dicta et enim tempora voluptatem. Nulla sapiente doloribus veritatis unde. Autem sequi minima aut. Voluptatem placeat natus. Et cumque fugiat.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:23 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 795
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697022&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=REvzJzDa7FTGJawkBo2tgBuBvPPHR0xHwxCIqTupT%2BY%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697022&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=REvzJzDa7FTGJawkBo2tgBuBvPPHR0xHwxCIqTupT%2BY%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"31b-Bli/zwxLsULPaUxH7JUVri8vTlw"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3feb6eb47ce7e-SIN
+
+{
+    "article": {
+        "slug": "Direct-Directives-Orchestrator-5079",
+        "title": "Direct Directives Orchestrator",
+        "description": "[Sed et nihil beatae. Enim ut qui. Ab non vel magni in laudantium. Non quaerat ea non voluptatem omnis rem deleniti. Et aut rerum., Consectetur quos placeat a quas magni. Nisi qui quia et porro ipsum. Et voluptatem ut qui non libero laudantium., Ut dicta et enim tempora voluptatem. Nulla sapiente doloribus veritatis unde. Autem sequi minima aut. Voluptatem placeat natus. Et cumque fugiat.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:22.918Z",
+        "updatedAt": "2024-09-30T11:50:22.918Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:23 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 795
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697022&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=REvzJzDa7FTGJawkBo2tgBuBvPPHR0xHwxCIqTupT%2BY%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697022&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=REvzJzDa7FTGJawkBo2tgBuBvPPHR0xHwxCIqTupT%2BY%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"31b-Bli/zwxLsULPaUxH7JUVri8vTlw"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3feb6eb47ce7e-SIN
+
+{
+    "article": {
+        "slug": "Direct-Directives-Orchestrator-5079",
+        "title": "Direct Directives Orchestrator",
+        "description": "[Sed et nihil beatae. Enim ut qui. Ab non vel magni in laudantium. Non quaerat ea non voluptatem omnis rem deleniti. Et aut rerum., Consectetur quos placeat a quas magni. Nisi qui quia et porro ipsum. Et voluptatem ut qui non libero laudantium., Ut dicta et enim tempora voluptatem. Nulla sapiente doloribus veritatis unde. Autem sequi minima aut. Voluptatem placeat natus. Et cumque fugiat.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:22.918Z",
+        "updatedAt": "2024-09-30T11:50:22.918Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "MathildeSchultzGlobal Research Strategist",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "MathildeSchultzGlobal Research Strategist",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:24 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 627
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697023&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=jbAFsAMtIldfAsTxKN8DOJnNr5XDL7ioL2r9DtoExdA%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697023&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=jbAFsAMtIldfAsTxKN8DOJnNr5XDL7ioL2r9DtoExdA%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"273-edhiHEbzcNPe6d44ZaFqEKuPHFw"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3febcdf744c83-SIN
+
+{
+    "article": {
+        "slug": "MathildeSchultzGlobal-Research-Strategist-5079",
+        "title": "MathildeSchultzGlobal Research Strategist",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:23.882Z",
+        "updatedAt": "2024-09-30T11:50:23.882Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:24 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 627
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697023&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=jbAFsAMtIldfAsTxKN8DOJnNr5XDL7ioL2r9DtoExdA%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697023&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=jbAFsAMtIldfAsTxKN8DOJnNr5XDL7ioL2r9DtoExdA%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"273-edhiHEbzcNPe6d44ZaFqEKuPHFw"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3febcdf744c83-SIN
+
+{
+    "article": {
+        "slug": "MathildeSchultzGlobal-Research-Strategist-5079",
+        "title": "MathildeSchultzGlobal Research Strategist",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:23.882Z",
+        "updatedAt": "2024-09-30T11:50:23.882Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "SherrySchummDynamic Division Liaison",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "SherrySchummDynamic Division Liaison",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:24 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 617
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697024&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=qx2ZmEZNugD9Gr6NJYQSF7XKLeuXOEet91%2F0%2FnN3FN0%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697024&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=qx2ZmEZNugD9Gr6NJYQSF7XKLeuXOEet91%2F0%2FnN3FN0%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"269-A9eJJN58sdv9Bf+O7ygC6YtuXI0"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fec309b53dc5-SIN
+
+{
+    "article": {
+        "slug": "SherrySchummDynamic-Division-Liaison-5079",
+        "title": "SherrySchummDynamic Division Liaison",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:24.861Z",
+        "updatedAt": "2024-09-30T11:50:24.861Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:24 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 617
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697024&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=qx2ZmEZNugD9Gr6NJYQSF7XKLeuXOEet91%2F0%2FnN3FN0%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697024&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=qx2ZmEZNugD9Gr6NJYQSF7XKLeuXOEet91%2F0%2FnN3FN0%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"269-A9eJJN58sdv9Bf+O7ygC6YtuXI0"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fec309b53dc5-SIN
+
+{
+    "article": {
+        "slug": "SherrySchummDynamic-Division-Liaison-5079",
+        "title": "SherrySchummDynamic Division Liaison",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:24.861Z",
+        "updatedAt": "2024-09-30T11:50:24.861Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "DwightRempelPrincipal Identity Producer",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "DwightRempelPrincipal Identity Producer",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:26 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 623
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697026&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=anzhxIyUW9Mb4frABvjYnnSBxUXYIw4K09pqUOM5xME%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697026&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=anzhxIyUW9Mb4frABvjYnnSBxUXYIw4K09pqUOM5xME%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"26f-A4FO1nxFVcI7+fvqFerh+GlfCWk"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fecc1f2b408b-SIN
+
+{
+    "article": {
+        "slug": "DwightRempelPrincipal-Identity-Producer-5079",
+        "title": "DwightRempelPrincipal Identity Producer",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:26.307Z",
+        "updatedAt": "2024-09-30T11:50:26.307Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:26 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 623
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697026&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=anzhxIyUW9Mb4frABvjYnnSBxUXYIw4K09pqUOM5xME%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697026&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=anzhxIyUW9Mb4frABvjYnnSBxUXYIw4K09pqUOM5xME%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"26f-A4FO1nxFVcI7+fvqFerh+GlfCWk"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fecc1f2b408b-SIN
+
+{
+    "article": {
+        "slug": "DwightRempelPrincipal-Identity-Producer-5079",
+        "title": "DwightRempelPrincipal Identity Producer",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:26.307Z",
+        "updatedAt": "2024-09-30T11:50:26.307Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Dynamic Program Producer",
+        "description": "[Sed et nihil beatae. Enim ut qui. Ab non vel magni in laudantium. Non quaerat ea non voluptatem omnis rem deleniti. Et aut rerum., Consectetur quos placeat a quas magni. Nisi qui quia et porro ipsum. Et voluptatem ut qui non libero laudantium., Ut dicta et enim tempora voluptatem. Nulla sapiente doloribus veritatis unde. Autem sequi minima aut. Voluptatem placeat natus. Et cumque fugiat.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Dynamic Program Producer",
+        "description": "[Sed et nihil beatae. Enim ut qui. Ab non vel magni in laudantium. Non quaerat ea non voluptatem omnis rem deleniti. Et aut rerum., Consectetur quos placeat a quas magni. Nisi qui quia et porro ipsum. Et voluptatem ut qui non libero laudantium., Ut dicta et enim tempora voluptatem. Nulla sapiente doloribus veritatis unde. Autem sequi minima aut. Voluptatem placeat natus. Et cumque fugiat.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:27 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 783
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697027&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4N9DtZtTZzzPBuvK14o8E6%2BWjg7kl2xYiZSOYe6a9ts%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697027&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4N9DtZtTZzzPBuvK14o8E6%2BWjg7kl2xYiZSOYe6a9ts%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"30f-2y1V6vezkIGapVynZr1RlMiuukc"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fed1dc71cdea-SIN
+
+{
+    "article": {
+        "slug": "Dynamic-Program-Producer-5079",
+        "title": "Dynamic Program Producer",
+        "description": "[Sed et nihil beatae. Enim ut qui. Ab non vel magni in laudantium. Non quaerat ea non voluptatem omnis rem deleniti. Et aut rerum., Consectetur quos placeat a quas magni. Nisi qui quia et porro ipsum. Et voluptatem ut qui non libero laudantium., Ut dicta et enim tempora voluptatem. Nulla sapiente doloribus veritatis unde. Autem sequi minima aut. Voluptatem placeat natus. Et cumque fugiat.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:27.232Z",
+        "updatedAt": "2024-09-30T11:50:27.232Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:27 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 783
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697027&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4N9DtZtTZzzPBuvK14o8E6%2BWjg7kl2xYiZSOYe6a9ts%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697027&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4N9DtZtTZzzPBuvK14o8E6%2BWjg7kl2xYiZSOYe6a9ts%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"30f-2y1V6vezkIGapVynZr1RlMiuukc"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fed1dc71cdea-SIN
+
+{
+    "article": {
+        "slug": "Dynamic-Program-Producer-5079",
+        "title": "Dynamic Program Producer",
+        "description": "[Sed et nihil beatae. Enim ut qui. Ab non vel magni in laudantium. Non quaerat ea non voluptatem omnis rem deleniti. Et aut rerum., Consectetur quos placeat a quas magni. Nisi qui quia et porro ipsum. Et voluptatem ut qui non libero laudantium., Ut dicta et enim tempora voluptatem. Nulla sapiente doloribus veritatis unde. Autem sequi minima aut. Voluptatem placeat natus. Et cumque fugiat.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:27.232Z",
+        "updatedAt": "2024-09-30T11:50:27.232Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "FernandoHaleyRegional Integration Producer",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "FernandoHaleyRegional Integration Producer",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:28 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 629
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697028&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=dVdHfShlfz9ZNMm%2B1LjaPFuxOb0RB2FrxbYzBlfK2Nk%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697028&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=dVdHfShlfz9ZNMm%2B1LjaPFuxOb0RB2FrxbYzBlfK2Nk%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"275-gZIkmXHwbQ0xGFtZrRIileB3XjY"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fed78f1e3e12-SIN
+
+{
+    "article": {
+        "slug": "FernandoHaleyRegional-Integration-Producer-5079",
+        "title": "FernandoHaleyRegional Integration Producer",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:28.136Z",
+        "updatedAt": "2024-09-30T11:50:28.136Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:28 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 629
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697028&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=dVdHfShlfz9ZNMm%2B1LjaPFuxOb0RB2FrxbYzBlfK2Nk%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697028&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=dVdHfShlfz9ZNMm%2B1LjaPFuxOb0RB2FrxbYzBlfK2Nk%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"275-gZIkmXHwbQ0xGFtZrRIileB3XjY"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fed78f1e3e12-SIN
+
+{
+    "article": {
+        "slug": "FernandoHaleyRegional-Integration-Producer-5079",
+        "title": "FernandoHaleyRegional Integration Producer",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:28.136Z",
+        "updatedAt": "2024-09-30T11:50:28.136Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "LeifO'ReillyDynamic Quality Representative",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "LeifO'ReillyDynamic Quality Representative",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:29 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 629
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697029&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=D6%2B0%2B%2FT8ChhU%2BbBLJZz2%2BMtCahQT6AwIIqHtFQ7E49Y%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697029&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=D6%2B0%2B%2FT8ChhU%2BbBLJZz2%2BMtCahQT6AwIIqHtFQ7E49Y%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"275-u1xI1uNZHXNOzm7l57CafBrzLO8"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fedd594881e3-SIN
+
+{
+    "article": {
+        "slug": "LeifO'ReillyDynamic-Quality-Representative-5079",
+        "title": "LeifO'ReillyDynamic Quality Representative",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:29.063Z",
+        "updatedAt": "2024-09-30T11:50:29.063Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:29 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 629
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697029&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=D6%2B0%2B%2FT8ChhU%2BbBLJZz2%2BMtCahQT6AwIIqHtFQ7E49Y%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697029&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=D6%2B0%2B%2FT8ChhU%2BbBLJZz2%2BMtCahQT6AwIIqHtFQ7E49Y%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"275-u1xI1uNZHXNOzm7l57CafBrzLO8"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fedd594881e3-SIN
+
+{
+    "article": {
+        "slug": "LeifO'ReillyDynamic-Quality-Representative-5079",
+        "title": "LeifO'ReillyDynamic Quality Representative",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:29.063Z",
+        "updatedAt": "2024-09-30T11:50:29.063Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "RexBalistreriHuman Brand Agent",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "RexBalistreriHuman Brand Agent",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:30 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 605
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697029&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=D6%2B0%2B%2FT8ChhU%2BbBLJZz2%2BMtCahQT6AwIIqHtFQ7E49Y%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697029&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=D6%2B0%2B%2FT8ChhU%2BbBLJZz2%2BMtCahQT6AwIIqHtFQ7E49Y%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"25d-0KBQPXTrZd8/ktdeOU4HYnlJFR4"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fee2bd334a9b-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "article": {
+        "slug": "RexBalistreriHuman-Brand-Agent-5079",
+        "title": "RexBalistreriHuman Brand Agent",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:29.942Z",
+        "updatedAt": "2024-09-30T11:50:29.942Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Mon, 30 Sep 2024 11:50:30 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 605
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697029&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=D6%2B0%2B%2FT8ChhU%2BbBLJZz2%2BMtCahQT6AwIIqHtFQ7E49Y%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697029&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=D6%2B0%2B%2FT8ChhU%2BbBLJZz2%2BMtCahQT6AwIIqHtFQ7E49Y%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"25d-0KBQPXTrZd8/ktdeOU4HYnlJFR4"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fee2bd334a9b-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "article": {
+        "slug": "RexBalistreriHuman-Brand-Agent-5079",
+        "title": "RexBalistreriHuman Brand Agent",
+        "description": "Dolores sed quasi placeat ipsum.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-09-30T11:50:29.942Z",
+        "updatedAt": "2024-09-30T11:50:29.942Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "password": "Vvbh@8989"
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "password": "Vvbh@8989"
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 11:50:31 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697031&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=oZTtPiy2pdF0532A0wePhOFHlKYDzxxVGz7qCuhUezk%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697031&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=oZTtPiy2pdF0532A0wePhOFHlKYDzxxVGz7qCuhUezk%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"128-voNOlomROaHQjr8RKFtqpXrYxY0"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fee878c8ce31-SIN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "username": "rayrosh4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDMxLCJleHAiOjE3MzI4ODEwMzF9.--ifCcvy-brqdoAZ6OjVVEO8x43-pWECUOh2_LhcadI"
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 11:50:31 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697031&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=oZTtPiy2pdF0532A0wePhOFHlKYDzxxVGz7qCuhUezk%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697031&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=oZTtPiy2pdF0532A0wePhOFHlKYDzxxVGz7qCuhUezk%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"128-voNOlomROaHQjr8RKFtqpXrYxY0"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fee878c8ce31-SIN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "username": "rayrosh4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDMxLCJleHAiOjE3MzI4ODEwMzF9.--ifCcvy-brqdoAZ6OjVVEO8x43-pWECUOh2_LhcadI"
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "password": "Vvbh@8989"
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "password": "Vvbh@8989"
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 11:50:32 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697032&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=L%2FnjuKW%2FjX5pfBfZyoiGApXFkV0pcbpACe2ZLk4soq4%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697032&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=L%2FnjuKW%2FjX5pfBfZyoiGApXFkV0pcbpACe2ZLk4soq4%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"128-qz5JR+QAJV0xWpXnLzoAgKTq8Fc"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3feeffe976044-SIN
+Content-Encoding: gzip
+
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "username": "rayrosh4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDMyLCJleHAiOjE3MzI4ODEwMzJ9.upZeIi9uUS-8Jlpy6Cx7Rt9lafoHlvPNSx9eAjHPikE"
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 11:50:32 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697032&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=L%2FnjuKW%2FjX5pfBfZyoiGApXFkV0pcbpACe2ZLk4soq4%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697032&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=L%2FnjuKW%2FjX5pfBfZyoiGApXFkV0pcbpACe2ZLk4soq4%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"128-qz5JR+QAJV0xWpXnLzoAgKTq8Fc"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3feeffe976044-SIN
+Content-Encoding: gzip
+
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "username": "rayrosh4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDMyLCJleHAiOjE3MzI4ODEwMzJ9.upZeIi9uUS-8Jlpy6Cx7Rt9lafoHlvPNSx9eAjHPikE"
+    }
+}
+Request method:	PUT
+Request URI:	https://api.realworld.io/api/articles/Luke-5079
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste."
+    }
+}
+Request method:	PUT
+Request URI:	https://api.realworld.io/api/articles/Luke-5079
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI3Njk3MDEyLCJleHAiOjE3MzI4ODEwMTJ9.m8Skkz4KoOvL1gRaH5cCYnQQOv-NCGi5Vt7DenA1Etw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste."
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 11:50:33 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697033&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=cMHkh%2BizgEaTAhwu3zWZ4g%2ByiDrlNG7E8hnpGt6%2Ba8k%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697033&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=cMHkh%2BizgEaTAhwu3zWZ4g%2ByiDrlNG7E8hnpGt6%2Ba8k%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"222-BXIGaHmXuNJZUU4OBP96Zan/4bM"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fef81d2a9f8f-SIN
+Content-Encoding: gzip
+
+{
+    "article": {
+        "slug": "Luke-5079",
+        "title": "Luke",
+        "description": "Quidem quis pariatur distinctio accusantium.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            
+        ],
+        "createdAt": "2024-09-26T04:52:29.189Z",
+        "updatedAt": "2024-09-30T11:50:33.355Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 200 OK
+Date: Mon, 30 Sep 2024 11:50:33 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727697033&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=cMHkh%2BizgEaTAhwu3zWZ4g%2ByiDrlNG7E8hnpGt6%2Ba8k%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727697033&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=cMHkh%2BizgEaTAhwu3zWZ4g%2ByiDrlNG7E8hnpGt6%2Ba8k%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"222-BXIGaHmXuNJZUU4OBP96Zan/4bM"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cb3fef81d2a9f8f-SIN
+Content-Encoding: gzip
+
+{
+    "article": {
+        "slug": "Luke-5079",
+        "title": "Luke",
+        "description": "Quidem quis pariatur distinctio accusantium.",
+        "body": "Cupiditate cum autem odio aut rerum quis mollitia. Omnis labore enim et quo. Atque qui sit neque qui repellat. Voluptatibus placeat tempore vitae. Sapiente ipsum et tenetur iste.",
+        "tagList": [
+            
+        ],
+        "createdAt": "2024-09-26T04:52:29.189Z",
+        "updatedAt": "2024-09-30T11:50:33.355Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}

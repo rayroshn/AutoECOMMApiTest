@@ -38,3 +38,20 @@ jobs:
         with:
           name: test-logs
           path: src/test/resources/Log/*.log  # Adjust the path if needed
+
+      - name: Generate Allure Report
+        run: mvn allure:report
+
+      - name: Upload Allure Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: API-TEST-REPORT
+          path: target/allure-results  # Path where Allure results are stored
+
+      - name: Publish API-TEST-REPORT
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: |
+          npx allure generate target/allure-results --clean
+          npx allure open
