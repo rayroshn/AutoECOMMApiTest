@@ -1,15 +1,4 @@
-# Ignore all .vhdx files
-*.vhdx
 
-# Ignore specific files
-src/test/resources/DockerDesktopWSL/main/ext4.vhdx
-src/test/resources/DockerDesktopWSL/disk/docker_data.vhdx
-docker-compose.yml
-Dockerfile
-
-# Ignore the entire DockerDesktopWSL directory
-src/test/resources/DockerDesktopWSL/
-src/test/resources/DockerDesktopWSL/main/ext4.vhdx
 
 
  
