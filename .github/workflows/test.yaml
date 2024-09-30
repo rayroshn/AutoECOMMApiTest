@@ -19,9 +19,12 @@ jobs:
       - name: Set up JDK 1
         uses: actions/setup-java@v2
         with:
-          java-version: '11'  # sssSpecify the JDK version your project uses
+          java-version: '11'  # Specify the JDK version your project uses
           distribution: 'temurin'  # You can use 'adopt' or 'zulu' as alternatives
 
+      - name: Create Log directory
+        run: mkdir -p src/test/resources/Log
+        
       - name: Build with Maven
         run: mvn clean  # You can change this to 'mvn test' if you only want to run tests
 
