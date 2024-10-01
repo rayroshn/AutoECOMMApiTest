@@ -31,7 +31,8 @@ jobs:
         run: mvn clean  # Clean the project
 
       - name: Run API tests
-        run: mvn test -Dmaven.test.failure.ignore=true  # Run the tests
+        run: mvn test -Dmaven.test.failure.ignore=true  # Continue even if tests fail
+      # Run the tests
 
       - name: Upload Log Files
         uses: actions/upload-artifact@v3  # Ensure you're using the latest version
