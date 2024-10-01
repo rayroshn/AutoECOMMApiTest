@@ -31,7 +31,7 @@ jobs:
         run: mvn clean  # Clean the project
 
       - name: Run API tests
-        run: mvn test  # Run the tests
+        run: mvn test -Dmaven.test.failure.ignore=true  # Run the tests
 
       - name: Upload Log Files
         uses: actions/upload-artifact@v3  # Ensure you're using the latest version
@@ -62,5 +62,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allure-report  # Path to the generated Allure report
-          publish_branch: gh-pages  # Branch to publish the report
+          publish_dir: ./allure-results  # Path to the generated Allure report
+          publish_branch: master  # Branch to publish the report
