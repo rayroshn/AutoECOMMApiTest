@@ -1,51 +1,34 @@
 package com.conduit.request.ApiTest;
 
-import br.com.six2six.fixturefactory.loader.FixtureFactoryLoader;
 import com.conduit.Constants.FilePaths;
-import com.conduit.ObjectManager.ApiObjectManager;
 import com.conduit.request.ApiTestBase;
-import com.conduit.request.BaseTest;
 import com.conduit.request.Pojo.Request.Article;
-import com.conduit.request.Pojo.Request.LoginUserPayload;
 import com.conduit.request.Pojo.Request.NewArticlePayload;
-import com.conduit.request.Pojo.Request.User;
 import com.conduit.request.Response.NewArticlePayloadResponse;
 import com.conduit.util.CsvReaderUtill;
 import com.conduit.util.FakerData.ArticleFakerData;
 import com.conduit.util.FakerData.FakerDataUtil;
 import com.conduit.util.FixturesTemplates.DataProvider;
-import com.conduit.util.tokenUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.fge.jsonschema.main.JsonValidator;
 import com.github.javafaker.Faker;
+import io.qameta.allure.Step;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
-import org.apache.commons.lang3.builder.ToStringExclude;
 import org.everit.json.schema.Schema;
 import org.everit.json.schema.ValidationException;
 import org.everit.json.schema.loader.SchemaLoader;
-import org.json.JSONArray;
 import org.json.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.IntStream;
 
 import static io.restassured.RestAssured.given;
-import static org.apache.commons.lang3.StringUtils.contains;
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.testng.Assert.assertEquals;
 
 public class articleAPITest extends ApiTestBase {
@@ -69,6 +52,7 @@ public class articleAPITest extends ApiTestBase {
         FixtureFactoryLoader.loadTemplates("com.conduit.util");
     }*/
 
+    @Step("This is a test step")
     @Test
     public void createNewArticle() throws IOException {
         Article article = new Article();
