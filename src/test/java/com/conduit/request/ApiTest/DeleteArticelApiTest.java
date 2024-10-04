@@ -7,12 +7,10 @@ import com.conduit.request.ApiTestBase;
 import com.conduit.request.Pojo.Request.CommentPayloadRequest;
 import com.conduit.request.Pojo.Request.DeleteArticle;
 import com.conduit.request.Response.DeleteArtcile.DeleteArticleResponsePayload;
-import com.conduit.request.Response.DeleteArtcile.Errors;
 import com.conduit.util.FakerData.FakerDataUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;
-import io.restassured.response.ResponseBody;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -35,10 +33,13 @@ public class DeleteArticelApiTest extends ApiTestBase {
     String userCsvFilePath = FilePaths.LOGIN_USER_DATA.getPath();
     String commentCsvFilePath = FilePaths.COMMENT_USER_DATA.getPath();
 
+   // @Test(dependsOnMethods = "com.conduit.request.ApiTest.articleAPITest.createNewArticle")
     @Test
     public void deleteValidArticleTest() throws IOException, InterruptedException {
 
-        response = given().when().delete("/articles/" + new DeleteArticle().getSlug()).thenReturn();
+        new articleAPITest().createNewArticle();
+       // response = given().when().delete("/articles/" + new DeleteArticle().getSlug()).thenReturn();
+        response = given().when().delete("/articles/" + articleAPITest.articleSlug).thenReturn();
         int statusCode = response.getStatusCode();
         System.out.println("statusCode = " + statusCode);
         System.out.println("response = " + response.asString());

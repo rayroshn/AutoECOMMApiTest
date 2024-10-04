@@ -1,0 +1,198 @@
+Request method:	POST
+Request URI:	https://api.realworld.io/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "password": "Vvbh@8989"
+    }
+}
+HTTP/1.1 200 OK
+Date: Fri, 04 Oct 2024 11:48:25 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1728042504&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=ZuDbzB6sd8hKVFqVRvBCShYz6qkcO1FDm1rjyi9w9GQ%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1728042504&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=ZuDbzB6sd8hKVFqVRvBCShYz6qkcO1FDm1rjyi9w9GQ%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"128-Q5ZxojuVsfW8m5A637eCdg/Bdi0"
+Via: 1.1 vegur
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cd4f153ea1e4da7-SIN
+Content-Encoding: gzip
+
+{
+    "user": {
+        "email": "rayrosh4@gmail.com",
+        "username": "rayrosh4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI4MDQyNTA1LCJleHAiOjE3MzMyMjY1MDV9.4noFw7pSxiw2hxZHGyrEazUDl5dARfrwecWgUMYqIoE"
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI4MDQyNTA1LCJleHAiOjE3MzMyMjY1MDV9.4noFw7pSxiw2hxZHGyrEazUDl5dARfrwecWgUMYqIoE
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI4MDQyNTA1LCJleHAiOjE3MzMyMjY1MDV9.4noFw7pSxiw2hxZHGyrEazUDl5dARfrwecWgUMYqIoE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Forward Functionality Planner",
+        "description": "[Qui amet voluptatem autem a molestias. Facere veritatis aliquam tenetur expedita ab. Nihil aliquam est quam. Neque est velit rem qui sed. Tempore atque consequatur rerum perferendis eveniet., Eos velit sint nobis sit dolorem laboriosam blanditiis. Eum asperiores labore provident iste nihil. Laudantium placeat aut beatae assumenda quia. Doloremque est aut soluta aliquid non., Reprehenderit suscipit nemo excepturi. Sit fugit quaerat illo odio est. Est autem ut porro quibusdam est. Molestiae accusamus eum delectus.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://api.realworld.io/api/articles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI4MDQyNTA1LCJleHAiOjE3MzMyMjY1MDV9.4noFw7pSxiw2hxZHGyrEazUDl5dARfrwecWgUMYqIoE
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI4MDQyNTA1LCJleHAiOjE3MzMyMjY1MDV9.4noFw7pSxiw2hxZHGyrEazUDl5dARfrwecWgUMYqIoE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "article": {
+        "title": "Forward Functionality Planner",
+        "description": "[Qui amet voluptatem autem a molestias. Facere veritatis aliquam tenetur expedita ab. Nihil aliquam est quam. Neque est velit rem qui sed. Tempore atque consequatur rerum perferendis eveniet., Eos velit sint nobis sit dolorem laboriosam blanditiis. Eum asperiores labore provident iste nihil. Laudantium placeat aut beatae assumenda quia. Doloremque est aut soluta aliquid non., Reprehenderit suscipit nemo excepturi. Sit fugit quaerat illo odio est. Est autem ut porro quibusdam est. Molestiae accusamus eum delectus.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ]
+    }
+}
+HTTP/1.1 201 Created
+Date: Fri, 04 Oct 2024 11:48:28 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 920
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1728042508&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=1TJRoaSOz1yBmNlfUhNu7Pg5SiAohy%2B1lR9MHIdAQSY%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1728042508&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=1TJRoaSOz1yBmNlfUhNu7Pg5SiAohy%2B1lR9MHIdAQSY%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"398-1otRGlOcW1M5Tr5UNYFllDRSySI"
+Via: 1.1 vegur
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cd4f16b6989466d-SIN
+
+{
+    "article": {
+        "slug": "Forward-Functionality-Planner-5079",
+        "title": "Forward Functionality Planner",
+        "description": "[Qui amet voluptatem autem a molestias. Facere veritatis aliquam tenetur expedita ab. Nihil aliquam est quam. Neque est velit rem qui sed. Tempore atque consequatur rerum perferendis eveniet., Eos velit sint nobis sit dolorem laboriosam blanditiis. Eum asperiores labore provident iste nihil. Laudantium placeat aut beatae assumenda quia. Doloremque est aut soluta aliquid non., Reprehenderit suscipit nemo excepturi. Sit fugit quaerat illo odio est. Est autem ut porro quibusdam est. Molestiae accusamus eum delectus.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-10-04T11:48:28.443Z",
+        "updatedAt": "2024-10-04T11:48:28.443Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+HTTP/1.1 201 Created
+Date: Fri, 04 Oct 2024 11:48:28 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 920
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1728042508&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=1TJRoaSOz1yBmNlfUhNu7Pg5SiAohy%2B1lR9MHIdAQSY%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1728042508&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=1TJRoaSOz1yBmNlfUhNu7Pg5SiAohy%2B1lR9MHIdAQSY%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"398-1otRGlOcW1M5Tr5UNYFllDRSySI"
+Via: 1.1 vegur
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8cd4f16b6989466d-SIN
+
+{
+    "article": {
+        "slug": "Forward-Functionality-Planner-5079",
+        "title": "Forward Functionality Planner",
+        "description": "[Qui amet voluptatem autem a molestias. Facere veritatis aliquam tenetur expedita ab. Nihil aliquam est quam. Neque est velit rem qui sed. Tempore atque consequatur rerum perferendis eveniet., Eos velit sint nobis sit dolorem laboriosam blanditiis. Eum asperiores labore provident iste nihil. Laudantium placeat aut beatae assumenda quia. Doloremque est aut soluta aliquid non., Reprehenderit suscipit nemo excepturi. Sit fugit quaerat illo odio est. Est autem ut porro quibusdam est. Molestiae accusamus eum delectus.]",
+        "body": "API body",
+        "tagList": [
+            "esse",
+            "voluptatem"
+        ],
+        "createdAt": "2024-10-04T11:48:28.443Z",
+        "updatedAt": "2024-10-04T11:48:28.443Z",
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "rayrosh4",
+            "bio": null,
+            "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+            "following": false
+        }
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.realworld.io/api/articles/%5BQui%20amet%20voluptatem%20autem%20a%20molestias.%20Facere%20veritatis%20aliquam%20tenetur%20expedita%20ab.%20Nihil%20aliquam%20est%20quam.%20Neque%20est%20velit%20rem%20qui%20sed.%20Tempore%20atque%20consequatur%20rerum%20perferendis%20eveniet.%2C%20Eos%20velit%20sint%20nobis%20sit%20dolorem%20laboriosam%20blanditiis.%20Eum%20asperiores%20labore%20provident%20iste%20nihil.%20Laudantium%20placeat%20aut%20beatae%20assumenda%20quia.%20Doloremque%20est%20aut%20soluta%20aliquid%20non.%2C%20Reprehenderit%20suscipit%20nemo%20excepturi.%20Sit%20fugit%20quaerat%20illo%20odio%20est.%20Est%20autem%20ut%20porro%20quibusdam%20est.%20Molestiae%20accusamus%20eum%20delectus.%5D
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI4MDQyNTA1LCJleHAiOjE3MzMyMjY1MDV9.4noFw7pSxiw2hxZHGyrEazUDl5dARfrwecWgUMYqIoE
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI4MDQyNTA1LCJleHAiOjE3MzMyMjY1MDV9.4noFw7pSxiw2hxZHGyrEazUDl5dARfrwecWgUMYqIoE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://api.realworld.io/api/articles/%5BQui%20amet%20voluptatem%20autem%20a%20molestias.%20Facere%20veritatis%20aliquam%20tenetur%20expedita%20ab.%20Nihil%20aliquam%20est%20quam.%20Neque%20est%20velit%20rem%20qui%20sed.%20Tempore%20atque%20consequatur%20rerum%20perferendis%20eveniet.%2C%20Eos%20velit%20sint%20nobis%20sit%20dolorem%20laboriosam%20blanditiis.%20Eum%20asperiores%20labore%20provident%20iste%20nihil.%20Laudantium%20placeat%20aut%20beatae%20assumenda%20quia.%20Doloremque%20est%20aut%20soluta%20aliquid%20non.%2C%20Reprehenderit%20suscipit%20nemo%20excepturi.%20Sit%20fugit%20quaerat%20illo%20odio%20est.%20Est%20autem%20ut%20porro%20quibusdam%20est.%20Molestiae%20accusamus%20eum%20delectus.%5D
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI4MDQyNTA1LCJleHAiOjE3MzMyMjY1MDV9.4noFw7pSxiw2hxZHGyrEazUDl5dARfrwecWgUMYqIoE
+				authorization=Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDc5fSwiaWF0IjoxNzI4MDQyNTA1LCJleHAiOjE3MzMyMjY1MDV9.4noFw7pSxiw2hxZHGyrEazUDl5dARfrwecWgUMYqIoE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>

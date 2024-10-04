@@ -39,6 +39,8 @@ public class articleAPITest extends ApiTestBase {
     String title=faker.name().title();
     List<String> description= FakerDataUtil.GET_DESCRIPTION_DATA;
         String userCsvFilePath= FilePaths.LOGIN_USER_DATA.getPath();
+    static String articleDescription;
+    static String articleSlug;
 
 
     /*@BeforeClass
@@ -71,7 +73,8 @@ public class articleAPITest extends ApiTestBase {
         assertEquals(String.valueOf(response.statusCode()),"201");
 
         NewArticlePayloadResponse newArticlePayloadResponse = objectMapper.readValue(response.getBody().asString(), NewArticlePayloadResponse.class);
-        String articleDescription = newArticlePayloadResponse.getArticle().getDescription().toString();
+         articleDescription = newArticlePayloadResponse.getArticle().getDescription().toString();
+       articleSlug= newArticlePayloadResponse.getArticle().getSlug().toString();
         assertEquals(articleDescription,description.toString());
         //Assert.assertEquals(newArticlePayloadResponse.getArticle().getTagList(),Arrays.asList("esse","voluptatem"));
 
