@@ -1,5 +1,7 @@
 target/
 allure-results/
+src/test/resources/Log
+
 
 
  

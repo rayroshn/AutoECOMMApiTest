@@ -41,7 +41,7 @@ public class articleAPITest extends ApiTestBase {
         String userCsvFilePath= FilePaths.LOGIN_USER_DATA.getPath();
     static String articleDescription;
 
-    //Slug Id
+    //Slug Ids
     static String articleSlug;
 
 
