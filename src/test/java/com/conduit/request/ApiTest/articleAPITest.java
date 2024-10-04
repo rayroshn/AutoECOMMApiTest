@@ -40,6 +40,8 @@ public class articleAPITest extends ApiTestBase {
     List<String> description= FakerDataUtil.GET_DESCRIPTION_DATA;
         String userCsvFilePath= FilePaths.LOGIN_USER_DATA.getPath();
     static String articleDescription;
+
+    //Slug Id
     static String articleSlug;
 
 
