@@ -57,3 +57,9 @@ jobs:
         with:
           node-version: '14'  # Specify the Node.js version
 
+      - name: Install Allure Commandline
+        run: npm install -g allure-commandline
+
+      - name: Generate Allure HTML report
+        run: allure generate target/allure-results --clean
+
