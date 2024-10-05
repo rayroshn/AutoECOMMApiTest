@@ -57,4 +57,4 @@ jobs:
       - name: Generate Allure HTML report
         run: |
           npm install -g allure-commandline  # Install Allure command line
-          allure generate target/allure-results --clean  # Generate HTML report
+          allure generate /allure-results --clean  # Generate HTML report
