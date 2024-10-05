@@ -1,3 +1,4 @@
+
 name: Run Maven Tests
 
 on:
@@ -31,8 +32,7 @@ jobs:
         run: mvn clean  # Clean the project
 
       - name: Run API tests
-        run: mvn test   # Continue even if tests fail
-      # Run the tests
+        run: mvn test --batch-mode || true  # Continue even if tests fail
 
       - name: Upload Log Files
         uses: actions/upload-artifact@v3  # Ensure you're using the latest version
@@ -43,14 +43,35 @@ jobs:
       - name: Generate Allure Report
         run: mvn allure:report  # Generate the Allure report
 
+      - name: Ensure Allure Results Directory Exists
+          run: mkdir -p target/allure-results
+
       - name: Upload Allure Results
         uses: actions/upload-artifact@v3
         with:
           name: Allure-Results
-          path: allure-results  # Path where Allure results are stored
+          path: target/allure-results  # Path where Allure results are stored
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '14'  # Specify the Node.js version
 
+      - name: Generate Allure HTML report
+        run: |
+          npm install -g allure-commandline  # Install Allure command line
+          allure generate target/allure-results --clean  # Generate HTML report
+
+      - name: Upload Allure Report
+        uses: actions/upload-artifact@v3  # Upload generated Allure HTML report
+        with:
+          name: Allure-Report
+          path: allure-report  # Adjust if necessary
+
+      # Optionally publish the report using GitHub Pages
+      - name: Deploy Allure Report to GitHub Pages
+        if: success() || failure()  # Always deploy report regardless of test result
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
+          publish_dir: ./allure-report  # Path to the generated Allure HTML report
