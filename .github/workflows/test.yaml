@@ -50,7 +50,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Allure-Results
-          path: target/allure-results  # Path where Allure results are stored
+          path: allure-results  # Path where Allure results are stored
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -61,5 +61,5 @@ jobs:
         run: npm install -g allure-commandline
 
       - name: Generate Allure HTML report
-        run: allure generate target/allure-results --clean
+        run: allure generate allure-results --clean
 
