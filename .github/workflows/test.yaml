@@ -43,6 +43,9 @@ jobs:
       - name: Generate Allure Report
         run: mvn allure:report  # Generate the Allure report
 
+      - name: Ensure Allure Results Directory Exists
+        run: mkdir -p target/allure-results
+
       - name: Upload Allure Results
         uses: actions/upload-artifact@v3
         with:
