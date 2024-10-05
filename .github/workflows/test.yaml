@@ -63,3 +63,9 @@ jobs:
       - name: Generate Allure HTML report
         run: allure generate allure-results --clean
 
+      - name: Deploy Allure Report to GitHub Pages
+        if: success() || failure()  # Deploy regardless of test success/failure
+        uses: peaceiris/actions-gh-pages@v3.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-results  # Path to the generated Allure report
