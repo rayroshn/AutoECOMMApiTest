@@ -119,21 +119,4 @@ jobs:
         if: success() || failure()
         run: |
           if [ -f "allure-report/widgets/summary.json" ]; then
-            echo "## Test Results Summary" >> $GITHUB_STEP_SUMMARY
-            total=$(jq '.statistic.total' allure-report/widgets/summary.json)
-            passed=$(jq '.statistic.passed' allure-report/widgets/summary.json)
-            failed=$(jq '.statistic.failed' allure-report/widgets/summary.json)
-            echo "* Total Tests: $total" >> $GITHUB_STEP_SUMMARY
-            echo "* Passed: $passed" >> $GITHUB_STEP_SUMMARY
-            echo "* Failed: $failed" >> $GITHUB_STEP_SUMMARY
-            echo "* [Full Allure Report](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/)" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "Allure report summary not found" >> $GITHUB_STEP_SUMMARY
-          fi
-        shell: bash
 
-      - name: Output Allure Report URL
-        if: success() || failure()
-        run: |
-          echo "Allure report is published to https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-        shell: bash
