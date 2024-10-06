@@ -193,6 +193,9 @@
                             </goals>
                         </execution>
                     </executions>
+                    <configuration>
+                        <outputDirectory>${project.build.directory}/allure-report</outputDirectory>
+                    </configuration>
                 </plugin>
 
 
