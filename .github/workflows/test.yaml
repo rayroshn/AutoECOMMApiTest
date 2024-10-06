@@ -68,7 +68,7 @@ jobs:
           name: Allure-Results
           path: AutoECOMMApiTest/target/allure-results
 
-      # Step to retrieve Allure history from the gh-pages branch
+      # Step to retrieve Allure history from the gh-pages branches
       - name: Get Allure history from gh-pages
         uses: actions/checkout@v3
         if: always()
