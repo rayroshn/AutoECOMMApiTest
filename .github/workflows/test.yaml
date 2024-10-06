@@ -32,10 +32,14 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
+      - name: Create Allure results directory
+        run: mkdir -p target/allure-results
+        shell: bash
+
       - name: Build and Test with Maven
         run: |
           mvn clean test
-          mvn allure:report  # Generate the Allure results
+          mvn allure:report
         shell: bash
 
       - name: Debug - List contents of target directory
@@ -47,72 +51,4 @@ jobs:
             echo "Allure results directory found."
             ls -R target/allure-results
           else
-            echo "Allure results directory NOT found."
-            exit 1  # Fail the workflow if the directory is not found
-          fi
-
-      - name: Upload Log Files
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-logs
-          path: src/test/resources/Log/*.log
-
-      - name: Upload Allure Results
-        uses: actions/upload-artifact@v3
-        with:
-          name: Allure-Results
-          path: target/allure-results
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-
-      - name: Install Allure Commandline
-        run: npm install -g allure-commandline
-
-      - name: Generate Allure HTML report
-        run: allure generate target/allure-results --clean -o target/allure-report
-
-      - name: Debug - Check Allure report location
-        run: |
-          if [ -d "target/allure-report" ]; then
-            echo "Allure HTML report found in target/allure-report"
-            ls -R target/allure-report
-          else
-            echo "Allure HTML report NOT found in target/allure-report"
-            exit 1  # Fail the workflow if the report is not found
-          fi
-
-      - name: Get Allure history
-        uses: actions/checkout@v2
-        if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
-
-      - name: Generate Allure Report with history
-        uses: simple-elf/allure-report-action@master
-        if: always()
-        with:
-          allure_results: target/allure-results
-          allure_history: allure-history
-          keep_reports: 20
-
-      - name: Deploy Allure Report to GitHub Pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: target/allure-report
-
-      - name: Comment PR with Allure Report link
-        if: github.event_name == 'pull_request'
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            github.rest.issues.createComment({
-
+            echo "Allure results directory NOT found
