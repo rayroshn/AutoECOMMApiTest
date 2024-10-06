@@ -46,7 +46,7 @@ jobs:
         run: mkdir -p target/allure-results
 
       - name: Generate Allure Report
-        run: mvn allure:report -DoutputDirectory=AutoECOMMApiTest/target/allure-report  # Generate the Allure report
+        run: mvn allure:report -DoutputDirectory=AutoECOMMApiTest/target/allure-results  # Generate the Allure report
 
       - name: Upload Allure Results
         uses: actions/upload-artifact@v3
