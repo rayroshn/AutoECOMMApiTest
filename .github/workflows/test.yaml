@@ -31,7 +31,8 @@ jobs:
         run: mvn clean  # Clean the project
 
       - name: Run API tests
-        run: mvn test  # Continue even if tests fail
+        run: mvn test   # Continue even if tests fail
+      # Run the tests
 
       - name: Upload Log Files
         uses: actions/upload-artifact@v3  # Ensure you're using the latest version
@@ -44,9 +45,6 @@ jobs:
 
       - name: Generate Allure Report
         run: mvn allure:report -DoutputDirectory=target/allure-report  # Generate the Allure report
-
-      - name: List Allure Report Directory
-        run: ls -R target/allure-report  # List contents of the allure report to ensure it's created
 
       - name: Upload Allure Results
         uses: actions/upload-artifact@v3
