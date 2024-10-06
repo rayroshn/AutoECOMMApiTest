@@ -65,6 +65,15 @@ jobs:
           name: Allure-Results
           path: target/allure-results
 
+      # Step to retrieve Allure history from the gh-pages branch
+      - name: Get Allure history
+        uses: actions/checkout@v3
+        if: always() # Execute even if previous steps fail
+        continue-on-error: true # Continue even if this step fails
+        with:
+          ref: gh-pages # Retrieve Allure history from gh-pages branch
+          path: allure-history # Set destination path for Allure history
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -73,35 +82,35 @@ jobs:
       - name: Install Allure Commandline
         run: npm install -g allure-commandline
 
-      - name: Generate Allure HTML report
-        run: |
-          allure_results_dir=$(find target -type d -name "allure-results" | head -n 1)
-          if [ -n "$allure_results_dir" ]; then
-            allure generate $allure_results_dir --clean -o allure-report
-          else
-            echo "Allure results directory not found"
-            exit 1
-          fi
-        shell: bash
+      # Step to generate Allure report with history
+      - name: Allure report action
+        uses: simple-elf/allure-report-action@master
+        if: always() # Run even if previous steps fail
+        with:
+          allure_results: target/allure-results # Specify directory containing Allure results
+          allure_history: allure-history # Store history
+          keep_reports: 5 # Keep last 5 reports
 
       - name: Debug - Check Allure report location
         run: |
-          if [ -d "allure-report" ]; then
-            echo "Allure HTML report found in allure-report"
-            ls -R allure-report
+          if [ -d "allure-history" ]; then
+            echo "Allure report generated successfully."
+            ls -R allure-history
           else
-            echo "Allure HTML report NOT found in allure-report"
+            echo "Allure report NOT found."
           fi
         shell: bash
 
-      - name: Deploy Allure Report to GitHub Pages
-        if: success() || failure()
+      # Step to deploy Allure report with history to GitHub Pages
+      - name: Deploy Allure report to GitHub Pages
+        if: always() # Run even if previous steps fail
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: allure-report
+          publish_dir: allure-history
 
+      # Comment the Pull Request with the Allure Report link
       - name: Comment PR with Allure Report link
         if: github.event_name == 'pull_request'
         uses: actions/github-script@v6
@@ -115,8 +124,20 @@ jobs:
               body: 'Allure Report for this PR: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/'
             })
 
+      # Create GitHub Actions Summary for Allure Report
       - name: Create GitHub Actions Summary
         if: success() || failure()
         run: |
-          if [ -f "allure-report/widgets/summary.json" ]; then
-
+          if [ -f "allure-history/widgets/summary.json" ]; then
+            echo "## Test Results Summary" >> $GITHUB_STEP_SUMMARY
+            total=$(jq '.statistic.total' allure-history/widgets/summary.json)
+            passed=$(jq '.statistic.passed' allure-history/widgets/summary.json)
+            failed=$(jq '.statistic.failed' allure-history/widgets/summary.json)
+            echo "* Total Tests: $total" >> $GITHUB_STEP_SUMMARY
+            echo "* Passed: $passed" >> $GITHUB_STEP_SUMMARY
+            echo "* Failed: $failed" >> $GITHUB_STEP_SUMMARY
+            echo "* [Full Allure Report](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "Allure report summary not found" >> $GITHUB_STEP_SUMMARY
+          fi
+        shell: bash
