@@ -1,74 +1,89 @@
-name: Run Maven Tests
+name: Run Maven Tests and Deploy Allure Report
 
 on:
   push:
     branches:
-      - master  # Change this to your default branch if necessary
+      - master
   pull_request:
     branches:
-      - master  # Run on pull requests to the main branch
+      - master
 
 jobs:
   build:
-    runs-on: windows-latest  # Use a Windows environment
+    runs-on: windows-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          path: AutoECOMMApiTest # Specify a custom path to avoid duplication
 
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: '11'  # Specify the JDK version your project usesss
-          distribution: 'temurin'  # Use 'temurin', 'adopt', or 'zulu'
+          java-version: '11'
+          distribution: 'temurin'
 
-      - name: Create Log directory (Windows)
+      - name: Create Log directory
         run: |
-          if (-Not (Test-Path -Path "src/test/resources/Log")) { New-Item -Path "src/test/resources/Log" -ItemType Directory }
-        shell: pwsh  # Use PowerShell as the shell on Windows
+          New-Item -Path "src/test/resources/Log" -ItemType Directory -Force
+        shell: pwsh
 
       - name: Build with Maven
-        run: mvn clean  # Clean the project
+        run: mvn clean
 
       - name: Run API tests
-        run: mvn test   # Continue even if tests fail
-      # Run the tests
-
-      - name: Upload Log Files
-        uses: actions/upload-artifact@v3  # Ensure you're using the latest version
-        with:
-          name: test-logs
-          path: src/test/resources/Log/*.log  # Adjust the path if needed
-
-      - name: Ensure Allure Results Directory Exists
-        run: mkdir -p target/allure-results
+        run: mvn test
 
       - name: Generate Allure Report
-        run: mvn allure:report -DoutputDirectory=target/allure-report  # Generate the Allure report
+        run: mvn allure:report
+
+      - name: Debug - List contents of target directory
+        run: |
+          Get-ChildItem -Path "target" -Recurse | Select-Object FullName
+        shell: pwsh
+
+      - name: Upload Log Files
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-logs
+          path: src/test/resources/Log/*.log
 
       - name: Upload Allure Results
         uses: actions/upload-artifact@v3
         with:
           name: Allure-Results
-          path: target/allure-results  # Path where Allure results are stored
+          path: target/allure-results
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'  # Specify the Node.js version
+          node-version: '14'
 
       - name: Install Allure Commandline
         run: npm install -g allure-commandline
 
       - name: Generate Allure HTML report
-        run: allure generate target/allure-results --clean -o target/allure-report  # Specify the output directory
+        run: allure generate target/allure-results --clean -o target/allure-report
+
+      - name: Debug - Check Allure report location
+        run: |
+          if (Test-Path "target/allure-report") {
+            Write-Host "Allure HTML report found in target/allure-report"
+            Get-ChildItem -Path "target/allure-report" -Recurse | Select-Object FullName
+          } else {
+            Write-Host "Allure HTML report NOT found in target/allure-report"
+          }
+        shell: pwsh
 
       - name: Deploy Allure Report to GitHub Pages
-        if: success() || failure()  # Deploy regardless of test success/failure
+        if: success() || failure()
         uses: peaceiris/actions-gh-pages@v3.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: target/allure-report  # Path to the generated Allure HTML report
+          publish_dir: ./target/allure-report
           publish_branch: gh-pages
+
+      - name: Output Allure Report URL
+        if: success() || failure()
+        run: |
+          echo "Allure report is published to https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
+        shell: bash
