@@ -30,7 +30,7 @@ jobs:
         shell: pwsh  # Use PowerShell as the shell on Windows
 
       - name: Build with Maven
-        run: mvn clean  # Clean the project
+        run: mvn clean -f AutoECOMMApiTest/pom.xml  # Clean the project
 
       - name: Run API tests
         run: mvn test -f AutoECOMMApiTest/pom.xml   # Continue even if tests fail
