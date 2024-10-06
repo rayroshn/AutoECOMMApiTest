@@ -74,6 +74,12 @@ jobs:
           }
         shell: pwsh
 
+      - name: Ensure Allure Results Directory Exists
+        run: mkdir -p target/allure-results
+
+      - name: List target directory contents
+        run: dir target  # Use 'ls target' if on a Unix-like shell
+
       - name: Deploy Allure Report to GitHub Pages
         if: success() || failure()
         uses: peaceiris/actions-gh-pages@v3.8.0
