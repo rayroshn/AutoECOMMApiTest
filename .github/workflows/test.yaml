@@ -24,7 +24,6 @@ jobs:
 
       - name: Create Log directory
         run: mkdir -p src/test/resources/Log
-        shell: bash
 
       - name: Cache Maven packages
         uses: actions/cache@v2
@@ -36,12 +35,11 @@ jobs:
       - name: Build and Test with Maven
         run: |
           mvn clean test
-          mvn allure:report
+          mvn allure:report  # Generate the Allure results
         shell: bash
 
       - name: Debug - List contents of target directory
         run: ls -R target
-        shell: bash
 
       - name: Debug - Check Allure results existence
         run: |
@@ -50,8 +48,8 @@ jobs:
             ls -R target/allure-results
           else
             echo "Allure results directory NOT found."
+            exit 1  # Fail the workflow if the directory is not found
           fi
-        shell: bash
 
       - name: Upload Log Files
         uses: actions/upload-artifact@v3
@@ -83,13 +81,8 @@ jobs:
             ls -R target/allure-report
           else
             echo "Allure HTML report NOT found in target/allure-report"
+            exit 1  # Fail the workflow if the report is not found
           fi
-        shell: bash
-
-      - name: Debug - Verify Node.js and Allure CLI
-        run: |
-          node --version
-          allure --version
 
       - name: Get Allure history
         uses: actions/checkout@v2
@@ -107,35 +100,13 @@ jobs:
           allure_history: allure-history
           keep_reports: 20
 
-      - name: Debug - List contents of allure-history
-        run: |
-          echo "Contents of allure-history directory:"
-          ls -R allure-history
-        shell: bash
-
-      - name: Debug - Check for index.html
-        run: |
-          if [ -f "allure-history/index.html" ]; then
-            echo "index.html found in allure-history"
-          else
-            echo "index.html NOT found in allure-history"
-          fi
-        shell: bash
-
       - name: Deploy Allure Report to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: allure-history
-
-      - name: Debug - Check gh-pages branch
-        run: |
-          git fetch origin gh-pages
-          echo "Latest commit on gh-pages branch:"
-          git log -1 --pretty=format:"%h - %an, %ar : %s" origin/gh-pages
-        shell: bash
+          publish_dir: target/allure-report
 
       - name: Comment PR with Allure Report link
         if: github.event_name == 'pull_request'
@@ -144,24 +115,4 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.name,
-              body: 'Allure Report for this PR: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/'
-            })
 
-      - name: Create GitHub Actions Summary
-        if: always()
-        run: |
-          echo "## Test Results Summary" >> $GITHUB_STEP_SUMMARY
-          echo "* Total Tests: $(grep -oP '(?<=<span class="summary__value">).*?(?=</span>)' allure-history/index.html | sed -n 1p)" >> $GITHUB_STEP_SUMMARY
-          echo "* Passed: $(grep -oP '(?<=<span class="summary__value">).*?(?=</span>)' allure-history/index.html | sed -n 2p)" >> $GITHUB_STEP_SUMMARY
-          echo "* Failed: $(grep -oP '(?<=<span class="summary__value">).*?(?=</span>)' allure-history/index.html | sed -n 3p)" >> $GITHUB_STEP_SUMMARY
-          echo "* [Full Allure Report](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/)" >> $GITHUB_STEP_SUMMARY
-        shell: bash
-
-      - name: Output Allure Report URL
-        if: always()
-        run: |
-          echo "Allure report is published to https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-        shell: bash
