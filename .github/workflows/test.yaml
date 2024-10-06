@@ -37,6 +37,9 @@ jobs:
         run: mvn clean test
         shell: bash
 
+      - name: Ensure Allure Results Directory Exists
+          run: mkdir -p target/allure-results
+
       - name: Debug - List contents of target directory
         run: ls -R target
         shell: bash
