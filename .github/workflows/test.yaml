@@ -21,7 +21,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: '11'  # Specify the JDK version your project uses
+          java-version: '11'  # Specify the JDK version your project usesss
           distribution: 'temurin'  # Use 'temurin', 'adopt', or 'zulu'
 
       - name: Create Log directory (Windows)
@@ -30,10 +30,10 @@ jobs:
         shell: pwsh  # Use PowerShell as the shell on Windows
 
       - name: Build with Maven
-        run: mvn clean -f AutoECOMMApiTest/pom.xml  # Clean the project
+        run: mvn clean  # Clean the project
 
       - name: Run API tests
-        run: mvn test -f AutoECOMMApiTest/pom.xml   # Continue even if tests fail
+        run: mvn test   # Continue even if tests fail
       # Run the tests
 
       - name: Upload Log Files
@@ -46,13 +46,13 @@ jobs:
         run: mkdir -p target/allure-results
 
       - name: Generate Allure Report
-        run: mvn allure:report -DoutputDirectory=allure-results  # Generate the Allure report
+        run: mvn allure:report -DoutputDirectory=target/allure-report  # Generate the Allure report
 
       - name: Upload Allure Results
         uses: actions/upload-artifact@v3
         with:
           name: Allure-Results
-          path: AutoECOMMApiTest/allure-results  # Path where Allure results are stored
+          path: target/allure-results  # Path where Allure results are stored
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -63,12 +63,12 @@ jobs:
         run: npm install -g allure-commandline
 
       - name: Generate Allure HTML report
-        run: allure generate AutoECOMMApiTest/allure-results --clean -o AutoECOMMApiTest/allure-results  # Specify the output directory
+        run: allure generate target/allure-results --clean -o target/allure-report  # Specify the output directory
 
       - name: Deploy Allure Report to GitHub Pages
         if: success() || failure()  # Deploy regardless of test success/failure
         uses: peaceiris/actions-gh-pages@v3.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: AutoECOMMApiTest/allure-results  # Path to the generated Allure HTML report
+          publish_dir: target/allure-report  # Path to the generated Allure HTML report
           publish_branch: gh-pages
