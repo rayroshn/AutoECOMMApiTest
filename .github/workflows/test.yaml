@@ -88,11 +88,13 @@ jobs:
       - name: Prepare GitHub Pages directory
         run: |
           New-Item -Path "gh-pages" -ItemType Directory -Force
-          # Check if the Allure report was generated
-          if (Test-Path "target/allure-report") {
-            Copy-Item -Path "target/allure-report/*" -Destination "gh-pages" -Recurse -Force
+          # Check if the Allure results were generated
+          if (Test-Path "target/allure-results") {
+            Write-Host "Copying Allure results to gh-pages directory."
+            Copy-Item -Path "target/allure-results/*" -Destination "gh-pages" -Recurse -Force
+            Get-ChildItem -Path "gh-pages" -Recurse | Select-Object FullName
           } else {
-            Write-Host "Allure report directory does not exist. Please check the generation step."
+            Write-Host "Allure results directory does not exist. Please check the generation step."
           }
         shell: pwsh
 
