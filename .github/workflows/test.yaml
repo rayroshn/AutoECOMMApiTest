@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          path: AutoECOMMApiTest # Specify a custom path to avoid duplication
 
       - name: Set up JDK
         uses: actions/setup-java@v2
@@ -31,7 +33,7 @@ jobs:
         run: mvn clean  # Clean the project
 
       - name: Run API tests
-        run: mvn test   # Continue even if tests fail
+        run: mvn test -f AutoECOMMApiTest/pom.xml   # Continue even if tests fail
       # Run the tests
 
       - name: Upload Log Files
@@ -44,13 +46,13 @@ jobs:
         run: mkdir -p target/allure-results
 
       - name: Generate Allure Report
-        run: mvn allure:report -DoutputDirectory=target/allure-report  # Generate the Allure report
+        run: mvn allure:report -DoutputDirectory=AutoECOMMApiTest/target/allure-report  # Generate the Allure report
 
       - name: Upload Allure Results
         uses: actions/upload-artifact@v3
         with:
           name: Allure-Results
-          path: target/allure-results  # Path where Allure results are stored
+          path: AutoECOMMApiTest/target/allure-results  # Path where Allure results are stored
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
