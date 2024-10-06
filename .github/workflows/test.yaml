@@ -37,6 +37,16 @@ jobs:
           Get-ChildItem -Path "target" -Recurse | Select-Object FullName
         shell: pwsh
 
+      - name: Debug - Check Allure results existence
+        run: |
+          if (Test-Path "target/allure-results") {
+            Write-Host "Allure results directory found."
+            Get-ChildItem -Path "target/allure-results" -Recurse | Select-Object FullName
+          } else {
+            Write-Host "Allure results directory NOT found."
+          }
+        shell: pwsh
+
       - name: Upload Log Files
         uses: actions/upload-artifact@v3
         with:
@@ -70,12 +80,16 @@ jobs:
           }
         shell: pwsh
 
+      - name: Debug - Verify Node.js and Allure CLI
+        run: |
+          node --version
+          allure --version
+
       - name: Prepare GitHub Pages directory
         run: |
-          $pagesDir = "gh-pages"
-          New-Item -Path $pagesDir -ItemType Directory -Force
-          Copy-Item -Path "target/allure-report/*" -Destination $pagesDir -Recurse -Force
-        shell: pwsh
+          mkdir -p gh-pages
+          cp -r target/allure-report/* gh-pages
+        shell: bash
 
       - name: Deploy Allure Report to GitHub Pages
         if: success() || failure()
