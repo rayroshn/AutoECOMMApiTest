@@ -46,13 +46,13 @@ jobs:
         run: mkdir -p target/allure-results
 
       - name: Generate Allure Report
-        run: mvn allure:report -DoutputDirectory=AutoECOMMApiTest/target/allure-results  # Generate the Allure report
+        run: mvn allure:report -DoutputDirectory=AutoECOMMApiTest/allure-results  # Generate the Allure report
 
       - name: Upload Allure Results
         uses: actions/upload-artifact@v3
         with:
           name: Allure-Results
-          path: AutoECOMMApiTest/target/allure-results  # Path where Allure results are stored
+          path: AutoECOMMApiTest/allure-results  # Path where Allure results are stored
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -63,12 +63,12 @@ jobs:
         run: npm install -g allure-commandline
 
       - name: Generate Allure HTML report
-        run: allure generate target/allure-results --clean -o target/allure-report  # Specify the output directory
+        run: allure generate AutoECOMMApiTest/allure-results --clean -o AutoECOMMApiTest/allure-report  # Specify the output directory
 
       - name: Deploy Allure Report to GitHub Pages
         if: success() || failure()  # Deploy regardless of test success/failure
         uses: peaceiris/actions-gh-pages@v3.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: target/allure-report  # Path to the generated Allure HTML report
+          publish_dir: AutoECOMMApiTest/allure-results  # Path to the generated Allure HTML report
           publish_branch: gh-pages
