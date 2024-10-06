@@ -24,6 +24,7 @@ jobs:
 
       - name: Create Log directory
         run: mkdir -p src/test/resources/Log
+        shell: bash
 
       - name: Cache Maven packages
         uses: actions/cache@v2
@@ -32,18 +33,13 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
-      - name: Create Allure results directory
-        run: mkdir -p target/allure-results
-        shell: bash
-
       - name: Build and Test with Maven
-        run: |
-          mvn clean test
-          mvn allure:report
+        run: mvn clean test
         shell: bash
 
       - name: Debug - List contents of target directory
         run: ls -R target
+        shell: bash
 
       - name: Debug - Check Allure results existence
         run: |
@@ -51,4 +47,93 @@ jobs:
             echo "Allure results directory found."
             ls -R target/allure-results
           else
-            echo "Allure results directory NOT found
+            echo "Allure results directory NOT found."
+            echo "Checking other possible locations:"
+            ls -R target
+          fi
+        shell: bash
+
+      - name: Upload Log Files
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-logs
+          path: src/test/resources/Log/*.log
+
+      - name: Upload Allure Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: Allure-Results
+          path: target/allure-results
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install Allure Commandline
+        run: npm install -g allure-commandline
+
+      - name: Generate Allure HTML report
+        run: |
+          allure_results_dir=$(find target -type d -name "allure-results" | head -n 1)
+          if [ -n "$allure_results_dir" ]; then
+            allure generate $allure_results_dir --clean -o allure-report
+          else
+            echo "Allure results directory not found"
+            exit 1
+          fi
+        shell: bash
+
+      - name: Debug - Check Allure report location
+        run: |
+          if [ -d "allure-report" ]; then
+            echo "Allure HTML report found in allure-report"
+            ls -R allure-report
+          else
+            echo "Allure HTML report NOT found in allure-report"
+          fi
+        shell: bash
+
+      - name: Deploy Allure Report to GitHub Pages
+        if: success() || failure()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-report
+
+      - name: Comment PR with Allure Report link
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.name,
+              body: 'Allure Report for this PR: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/'
+            })
+
+      - name: Create GitHub Actions Summary
+        if: success() || failure()
+        run: |
+          if [ -f "allure-report/widgets/summary.json" ]; then
+            echo "## Test Results Summary" >> $GITHUB_STEP_SUMMARY
+            total=$(jq '.statistic.total' allure-report/widgets/summary.json)
+            passed=$(jq '.statistic.passed' allure-report/widgets/summary.json)
+            failed=$(jq '.statistic.failed' allure-report/widgets/summary.json)
+            echo "* Total Tests: $total" >> $GITHUB_STEP_SUMMARY
+            echo "* Passed: $passed" >> $GITHUB_STEP_SUMMARY
+            echo "* Failed: $failed" >> $GITHUB_STEP_SUMMARY
+            echo "* [Full Allure Report](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "Allure report summary not found" >> $GITHUB_STEP_SUMMARY
+          fi
+        shell: bash
+
+      - name: Output Allure Report URL
+        if: success() || failure()
+        run: |
+          echo "Allure report is published to https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+        shell: bash
