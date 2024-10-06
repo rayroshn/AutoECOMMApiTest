@@ -88,8 +88,18 @@ jobs:
       - name: Prepare GitHub Pages directory
         run: |
           New-Item -Path "gh-pages" -ItemType Directory -Force
-          Copy-Item -Path "target/allure-report/*" -Destination "gh-pages" -Recurse -Force
-        shell: pwsh  # Changed to pwsh for consistency on Windows
+          # Check if the Allure report was generated
+          if (Test-Path "target/allure-report") {
+            Copy-Item -Path "target/allure-report/*" -Destination "gh-pages" -Recurse -Force
+          } else {
+            Write-Host "Allure report directory does not exist. Please check the generation step."
+          }
+        shell: pwsh
+
+      - name: Debug - List contents of gh-pages directory
+        run: |
+          Get-ChildItem -Path "gh-pages" -Recurse | Select-Object FullName
+        shell: pwsh
 
       - name: Deploy Allure Report to GitHub Pages
         if: success() || failure()
