@@ -22,23 +22,9 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: Create Log directory
-        run: mkdir -p src/test/resources/Log
-        shell: bash
-
-      - name: Cache Maven packages
-        uses: actions/cache@v2
-        with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-m2
-
       - name: Build and Test with Maven
         run: mvn clean test
         shell: bash
-
-      - name: Ensure Allure Results Directory Exists
-        run: mkdir -p target/allure-results
 
       - name: Debug - List contents of target directory
         run: ls -R target
