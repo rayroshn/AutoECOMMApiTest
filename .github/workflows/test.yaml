@@ -126,9 +126,9 @@ jobs:
       - name: Debug - Checking environment
         run: |
             echo "Checking SMTP server configuration:"
-            echo "Server address: ${{ secrets.SMTP_SERVER_ADDRESS }}"
-            echo "Server port: ${{ secrets.SMTP_SERVER_PORT }}"
-            echo "Sending email from: ${{ secrets.EMAIL_USERNAME }}"
+            echo "Server address: ${{ SECRETS_SMTP_SERVER_ADDRESS }}"
+            echo "Server port: ${{ SECRETS_SMTP_SERVER_PORT }}"
+            echo "Sending email from: ${{ SECRETS_EMAIL_USERNAME }}"
             echo "To recipient: rayroshn@gmail.com"
 
       - name: Send Email with SMTP
@@ -141,7 +141,7 @@ jobs:
             to: rayroshn@gmail.com
               # Add the sender's email here
         env:
-            EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}  # This should be your email or app-specific username
-            EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}  # This should be your email password or app-specific password
+            EMAIL_USERNAME: ${{ SECRETS_EMAIL_USERNAME }}  # This should be your email or app-specific username
+            EMAIL_PASSWORD: ${{ SECRETS_EMAIL_PASSWORD }}  # This should be your email password or app-specific password
 
 
