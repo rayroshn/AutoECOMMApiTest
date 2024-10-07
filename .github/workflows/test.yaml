@@ -26,29 +26,66 @@ jobs:
         run: mkdir -p src/test/resources/Log
         shell: bash
 
+      - name: Cache Maven packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
 
       - name: Build and Test with Maven
         run: mvn clean test
         shell: bash
 
 
-      - name: Get Allure history
-        uses: actions/checkout@v2
+      - name: Debug - List contents of target directory
+        run: ls -R target
+        shell: bash
+
+      - name: Debug - Check Allure results existence
+        run: |
+          if [ -d "target/allure-results" ]; then
+            echo "Allure results directory found."
+            ls -R target/allure-results
+          else
+            echo "Allure results directory NOT found."
+            echo "Checking other possible locations:"
+            ls -R target
+          fi
+        shell: bash
+
+      - name: Upload Log Files
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-logs
+          path: src/test/resources/Log/*.log
+
+      # Step to retrieve Allure history from the gh-pages branches
+      - name: Get Allure history from gh-pages
+        uses: actions/checkout@v3
         if: always()
         continue-on-error: true
         with:
-        ref: gh-pages
-        path: gh-pages
+          ref: gh-pages
+          path: gh-pages
 
-      - name: Allure Report action from marketplace
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install Allure Commandline
+        run: npm install -g allure-commandline
+
+      - name: Generate Allure Report
         uses: simple-elf/allure-report-action@master
         if: always()
         id: allure-report
         with:
-          allure_results: target/allure-results
           gh_pages: gh-pages
-          allure_report: allure-report
+          allure_results: target/allure-results
           allure_history: allure-history
+          keep_reports: 5
 
       - name: Deploy Allure report to GitHub Pages
         if: always()
@@ -56,4 +93,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: target/allure-results
+          publish_dir: allure-history
