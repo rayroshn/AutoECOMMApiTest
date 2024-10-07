@@ -169,7 +169,7 @@
 
             </plugin>
 
-            <!-- Allure Maven Plugin for generating reports -->
+            <!-- Allure Maven Plugin for generating reportsss -->
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
