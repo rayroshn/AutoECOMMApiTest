@@ -123,18 +123,3 @@ jobs:
           fi
         continue-on-error: true
 
-      - name: Send Email with SMTP
-        uses: dawidd6/action-send-mail@v3
-        with:
-            server_address: smtp.gmail.com
-            server_port: 465
-            subject: Allure Test Results
-            body: "The latest Allure Test Results are available at: https://rayroshn.github.io/AutoECOMMApiTest/"
-            to: rayroshn@gmail.com
-              # Add the sender's email here
-            from : ${{ secrets.EMAIL_USERNAME }}
-        env:
-            EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}  # This should be your email or app-specific username
-            EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}  # This should be your email password or app-specific password
-
-
