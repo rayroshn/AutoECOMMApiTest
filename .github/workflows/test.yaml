@@ -133,4 +133,4 @@ jobs:
           subject: "Allure Test Resultsss"
           body: "The latest Allure Test Results are available at: https://rayroshn.github.io/AutoECOMMApiTest/"
           to: rayroshn@gmail.com
-          from: ${{ SECRETS_EMAIL_USERNAME }}
+          from: rayrosh@gmail.com
