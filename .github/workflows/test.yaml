@@ -131,17 +131,5 @@ jobs:
             echo "Sending email from: ${{ SECRETS_EMAIL_USERNAME }}"
             echo "To recipient: rayroshn@gmail.com"
 
-      - name: Send Email with SMTP
-        uses: dawidd6/action-send-mail@v3
-        with:
-            server_address: smtp.gmail.com
-            server_port: 465
-            subject: Allure Test Results
-            body: "The latest Allure Test Results are available at: https://rayroshn.github.io/AutoECOMMApiTest/"
-            to: rayroshn@gmail.com
-              # Add the sender's email here
-        env:
-            EMAIL_USERNAME: ${{ SECRETS_EMAIL_USERNAME }}  # This should be your email or app-specific username
-            EMAIL_PASSWORD: ${{ SECRETS_EMAIL_PASSWORD }}  # This should be your email password or app-specific password
 
 
