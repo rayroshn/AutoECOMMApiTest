@@ -123,6 +123,14 @@ jobs:
           fi
         continue-on-error: true
 
+      - name: Debug - Checking environment
+          run: |
+            echo "Checking SMTP server configuration:"
+            echo "Server address: ${{ secrets.SMTP_SERVER_ADDRESS }}"
+            echo "Server port: ${{ secrets.SMTP_SERVER_PORT }}"
+            echo "Sending email from: ${{ secrets.EMAIL_USERNAME }}"
+            echo "To recipient: rayroshn@gmail.com"
+
       - name: Send Email with SMTP
         uses: dawidd6/action-send-mail@v3
         with:
@@ -131,7 +139,7 @@ jobs:
             subject: Allure Test Results
             body: "The latest Allure Test Results are available at: https://rayroshn.github.io/AutoECOMMApiTest/"
             to: rayroshn@gmail.com
-            from: ${{ secrets.EMAIL_USERNAME }}  # Add the sender's email here
+              # Add the sender's email here
         env:
             EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}  # This should be your email or app-specific username
             EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}  # This should be your email password or app-specific password
