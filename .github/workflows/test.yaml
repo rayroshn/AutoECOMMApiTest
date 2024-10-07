@@ -124,7 +124,7 @@ jobs:
         continue-on-error: true
 
       - name: Debug - Checking environment
-          run: |
+        run: |
             echo "Checking SMTP server configuration:"
             echo "Server address: ${{ secrets.SMTP_SERVER_ADDRESS }}"
             echo "Server port: ${{ secrets.SMTP_SERVER_PORT }}"
