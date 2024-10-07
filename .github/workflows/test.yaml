@@ -126,11 +126,14 @@ jobs:
       - name: Send Email with SMTP
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{ SECRETS_EMAIL_USERNAME }}
-          password: ${{ SECRETS_EMAIL_PASSWORD }}
-          subject: "Allure Test Resultsss"
-          body: "The latest Allure Test Results are available at: https://rayroshn.github.io/AutoECOMMApiTest/"
-          to: rayroshn@gmail.com
-          from: rayrosh@gmail.com
+            server_address: smtp.gmail.com
+            server_port: 465
+            subject: Allure Test Results
+            body: "The latest Allure Test Results are available at: https://rayroshn.github.io/AutoECOMMApiTest/"
+            to: rayroshn@gmail.com
+            from: ${{ secrets.EMAIL_USERNAME }}  # Add the sender's email here
+        env:
+            EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}  # This should be your email or app-specific username
+            EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}  # This should be your email password or app-specific password
+
+
