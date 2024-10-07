@@ -34,7 +34,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Build and Test with Maven
-        run: mvn clean test
+        run: mvn clean test allure:report
         shell: bash
 
 
@@ -84,8 +84,15 @@ jobs:
         with:
           gh_pages: gh-pages
           allure_results: target/allure-results
+          allure_report: allure-report
           allure_history: allure-history
-          keep_reports: 5
+          keep_reports: 2
+
+      - name: Debug - Check Allure report
+        run: |
+          echo "Checking Allure report directory:"
+          ls -R allure-report
+        shell: bash
 
       - name: Deploy Allure report to GitHub Pages
         if: always()
@@ -93,4 +100,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: target/allure-results
+          publish_dir: allure-report

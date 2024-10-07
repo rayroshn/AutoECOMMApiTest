@@ -186,8 +186,10 @@
                 </executions>
                 <configuration>
                     <outputDirectory>${project.build.directory}/allure-report</outputDirectory>
+                    <reportVersion>2.14.0</reportVersion>
                     <!--<resultsDirectory>../allure-results</resultsDirectory> -->
                    <resultsDirectory>${project.basedir}/allure-results</resultsDirectory>
+
 
                      <!-- <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory> -->
                  </configuration>
