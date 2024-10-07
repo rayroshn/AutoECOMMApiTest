@@ -186,8 +186,8 @@
                 </executions>
                 <configuration>
                     <outputDirectory>${project.build.directory}/allure-report</outputDirectory>
-                    <resultsDirectory>../allure-results</resultsDirectory>
-                    <!-- <resultsDirectory>${project.basedir}/allure-results</resultsDirectory> -->
+                    <!--<resultsDirectory>../allure-results</resultsDirectory> -->
+                   <resultsDirectory>${project.basedir}/allure-results</resultsDirectory>
 
                      <!-- <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory> -->
                  </configuration>
