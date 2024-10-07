@@ -132,9 +132,9 @@ jobs:
             body: "The latest Allure Test Results are available at: https://rayroshn.github.io/AutoECOMMApiTest/"
             to: rayroshn@gmail.com
               # Add the sender's email here
-            from : rayroshn@gmail.com
+            from : ${{ secrets.EMAIL_USERNAME }}
         env:
-            EMAIL_USERNAME: ${{ SECRETS_EMAIL_USERNAME }}  # This should be your email or app-specific username
-            EMAIL_PASSWORD: ${{ SECRETS_EMAIL_PASSWORD }}  # This should be your email password or app-specific password
+            EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}  # This should be your email or app-specific username
+            EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}  # This should be your email password or app-specific password
 
 
