@@ -1,3 +1,4 @@
+
 package com.conduit.request.Response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -8,19 +9,17 @@ import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "slug",
-        "title",
-        "description",
-        "body",
-        "tagList",
-        "createdAt",
-        "updatedAt",
-        "favorited",
-        "favoritesCount",
-        "author"
+    "slug",
+    "title",
+    "description",
+    "tagList",
+    "createdAt",
+    "favorited",
+    "favoritesCount",
+    "author"
 })
 
-public class ArticleResponse {
+public class Article {
 
     @JsonProperty("slug")
     private String slug;
@@ -28,14 +27,10 @@ public class ArticleResponse {
     private String title;
     @JsonProperty("description")
     private String description;
-    @JsonProperty("body")
-    private String body;
     @JsonProperty("tagList")
     private List<String> tagList;
     @JsonProperty("createdAt")
     private String createdAt;
-    @JsonProperty("updatedAt")
-    private String updatedAt;
     @JsonProperty("favorited")
     private Boolean favorited;
     @JsonProperty("favoritesCount")
@@ -53,7 +48,7 @@ public class ArticleResponse {
         this.slug = slug;
     }
 
-    public ArticleResponse withSlug(String slug) {
+    public Article withSlug(String slug) {
         this.slug = slug;
         return this;
     }
@@ -68,7 +63,7 @@ public class ArticleResponse {
         this.title = title;
     }
 
-    public ArticleResponse withTitle(String title) {
+    public Article withTitle(String title) {
         this.title = title;
         return this;
     }
@@ -83,23 +78,8 @@ public class ArticleResponse {
         this.description = description;
     }
 
-    public ArticleResponse withDescription(String description) {
+    public Article withDescription(String description) {
         this.description = description;
-        return this;
-    }
-
-    @JsonProperty("body")
-    public String getBody() {
-        return body;
-    }
-
-    @JsonProperty("body")
-    public void setBody(String body) {
-        this.body = body;
-    }
-
-    public ArticleResponse withBody(String body) {
-        this.body = body;
         return this;
     }
 
@@ -113,7 +93,7 @@ public class ArticleResponse {
         this.tagList = tagList;
     }
 
-    public ArticleResponse withTagList(List<String> tagList) {
+    public Article withTagList(List<String> tagList) {
         this.tagList = tagList;
         return this;
     }
@@ -128,23 +108,8 @@ public class ArticleResponse {
         this.createdAt = createdAt;
     }
 
-    public ArticleResponse withCreatedAt(String createdAt) {
+    public Article withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
-        return this;
-    }
-
-    @JsonProperty("updatedAt")
-    public String getUpdatedAt() {
-        return updatedAt;
-    }
-
-    @JsonProperty("updatedAt")
-    public void setUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    public ArticleResponse withUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
         return this;
     }
 
@@ -158,7 +123,7 @@ public class ArticleResponse {
         this.favorited = favorited;
     }
 
-    public ArticleResponse withFavorited(Boolean favorited) {
+    public Article withFavorited(Boolean favorited) {
         this.favorited = favorited;
         return this;
     }
@@ -173,7 +138,7 @@ public class ArticleResponse {
         this.favoritesCount = favoritesCount;
     }
 
-    public ArticleResponse withFavoritesCount(Integer favoritesCount) {
+    public Article withFavoritesCount(Integer favoritesCount) {
         this.favoritesCount = favoritesCount;
         return this;
     }
@@ -188,7 +153,7 @@ public class ArticleResponse {
         this.author = author;
     }
 
-    public ArticleResponse withAuthor(Author author) {
+    public Article withAuthor(Author author) {
         this.author = author;
         return this;
     }
