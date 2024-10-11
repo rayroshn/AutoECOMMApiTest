@@ -37,10 +37,6 @@ jobs:
         run: mvn clean test allure:report
         shell: bash
 
-      - name: Run FileIO Tests
-        run: mvn -Dtest=com.FileIO.FileUploadTest test allure:report
-        shell: bash
-
       - name: Debug - Check Maven build output
         run: |
           echo "Checking target directory:"
