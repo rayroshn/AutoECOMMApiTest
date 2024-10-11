@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class FileUploadTest {
+public class FileUploadTest  {
 
     private static final String BASE_URL = "https://file.io";
     private static final String FILE_PATH = "fileupload/gluco.PNG";
