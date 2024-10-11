@@ -38,7 +38,7 @@ public class FileUploadTest  {
         }
 
         // Upload the file
-         Response response = given()
+         Response response = given().contentType("multipart/form-data")
                 .multiPart("file", tempFile)
                 .when()
                 .post(BASE_URL)
@@ -86,7 +86,7 @@ public class FileUploadTest  {
         }
 
         // Upload the file
-        Response uploadResponse =given()
+        Response uploadResponse =given().contentType("multipart/form-data")
                 .multiPart("file", fileToUpload)
                 .when()
                 .post(BASE_URL)
@@ -150,7 +150,7 @@ public class FileUploadTest  {
               for(String verifyFiles :uploadResponse)
               {
                   int count =0;
-                  Response response = given().accept("application/json").when().get(BASE_URL + "/" + verifyFiles +"/metadata").then().extract().response();
+                  Response response = given().contentType("multipart/form-data").when().get(BASE_URL + "/" + verifyFiles +"/metadata").then().extract().response();
                   String imaageKey =response.jsonPath().getString("key");
                   System.out.println("imaageKey = " + imaageKey);
                   getKeys.add(imaageKey);
@@ -177,7 +177,7 @@ public class FileUploadTest  {
     // Get method call to call metadata API "/" + verifyFiles + "/metadata
     private List<String> getKey(List<String> uploadResponse) {
         return uploadResponse.parallelStream().map(verifyFiles -> {
-            Response response = given().accept("application/json").when().get(BASE_URL + "/" + verifyFiles + "/metadata").then().extract().response();
+            Response response = given().when().get(BASE_URL + "/" + verifyFiles + "/metadata").then().extract().response();
             String imaageKey = response.jsonPath().getString("key");
             System.out.println("imaageKey = " + imaageKey);
             return imaageKey;
@@ -197,7 +197,7 @@ public class FileUploadTest  {
 
 
             File fileToUpload = new File(classLoader.getResource(files).getFile());
-            Response response = given()
+            Response response = given().contentType("multipart/form-data")
                     .multiPart("file", fileToUpload)
                     .when()
                     .post(BASE_URL)
@@ -222,7 +222,7 @@ public class FileUploadTest  {
         filePaths.forEach(file -> {
             // now first convert String file or file paths to file object as its reqd. as fileObject datatype in multipart() function
             File fileToUpload = new File(file);
-            Response response = given().
+            Response response = given().contentType("multipart/form-data").
                     multiPart("file", fileToUpload).
                     when().
                     post(BASE_URL).

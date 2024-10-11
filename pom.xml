@@ -159,8 +159,15 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire.version}</version>
                 <configuration>
+                    <systemProperties>
+                        <property>
+                            <name>allure.results.directory</name>
+                            <value>${project.build.directory}/allure-results</value>
+                        </property>
+                    </systemProperties>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                       <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/file-io-tests.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <testFailureIgnore>true</testFailureIgnore>
                     <properties>
@@ -194,14 +201,11 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <outputDirectory>${project.basedir.directory}/allure-report</outputDirectory>
                     <reportVersion>2.14.0</reportVersion>
-                    <!--<resultsDirectory>../allure-results</resultsDirectory> -->
-                   <resultsDirectory>${project.basedir}/allure-results</resultsDirectory>
-
-
-                     <!-- <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory> -->
-                 </configuration>
+                    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+                    <!--<resultsDirectory>${project.build.directory}/allure-results</resultsDirectory> -->
+                    <reportDirectory>${project.build.directory}/allure-report</reportDirectory>
+                </configuration>
              </plugin>
 
             <plugin>
@@ -218,7 +222,6 @@
                     </reportPlugins> -->
                 </configuration>
             </plugin>
-
 
                        <plugin>
                            <groupId>org.apache.maven.plugins</groupId>
