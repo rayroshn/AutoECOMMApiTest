@@ -54,6 +54,14 @@
                     <include name="getAllArticlesTest"/>
                 </methods>
             </class>
+            <class name="com.FileIO.FileUploadTest">
+                <methods>
+                    <include name="testFileUploadAndRetrieval"/>
+                    <include name="testFileUploadAndRetrievalFromResources"/>
+                    <include name="testMultiFileUploadAndRetrievalFromResources"/>
+                    <include name="testMultiFileUploadAndRetrievalFromResourcesParallerStream"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
