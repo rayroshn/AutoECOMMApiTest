@@ -14,6 +14,11 @@
                     <include name="testMultiFileUploadAndRetrievalFromResourcesParallerStream"/>
                 </methods>
             </class>
+            <class name="com.FileIO.FileDownloadAutomation">
+                <methods>
+                    <include name="DownloadFileAPITest"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
