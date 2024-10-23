@@ -19,6 +19,11 @@
                     <include name="DownloadFileAPITest"/>
                 </methods>
             </class>
+            <class name="com.FileIO.GitHubOAuthTest">
+                <methods>
+                    <include name="getOAuthToken"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
