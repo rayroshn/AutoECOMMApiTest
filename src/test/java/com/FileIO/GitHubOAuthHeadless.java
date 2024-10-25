@@ -11,15 +11,14 @@ public class GitHubOAuthHeadless {
     String code;
 
     @Test
-    public void testAuthCode()
-    {
+    public void testAuthCode() throws InterruptedException {
 
         String AuthCode=getAuthCode();
         System.out.println("AuthCode = " + AuthCode);
 
     }
 
-    public  String getAuthCode() {
+    public  String getAuthCode() throws InterruptedException {
 
       //WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
@@ -33,7 +32,7 @@ public class GitHubOAuthHeadless {
         options.addArguments("--disable-software-rasterizer");  // Forces Chrome to use only software rendering
 
         // Start Chrome Driver
-        WebDriver driver = new ChromeDriver(options);
+        WebDriver driver = new ChromeDriver();
 
 
         // Navigate to the authorization URL
@@ -60,8 +59,12 @@ public class GitHubOAuthHeadless {
         driver.findElement(By.id("password")).sendKeys("Pardegand#!!4u");
         driver.findElement(By.xpath("//*[@id=\"login\"]/div[3]/form/div/input[13]")).click();
 
+       Thread.sleep(2);
+
         String redirectUrls = driver.getCurrentUrl();
         System.out.println("Redirect URL new: " + redirectUrls);
+
+
 
         String[] parts = redirectUrls.split("=");
 

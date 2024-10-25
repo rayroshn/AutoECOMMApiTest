@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.given;
 public class GitHubOAuthTest {
 
     @Test
-    public static void getOAuthToken() throws JsonProcessingException {
+    public static void getOAuthToken() throws JsonProcessingException, InterruptedException {
 
         // Base URI for GitHub API
         RestAssured.baseURI = "https://github.com/login/oauth/access_token";
@@ -32,6 +32,7 @@ public class GitHubOAuthTest {
 
         //Using POJO
         ObjectMapper objectMapper = new ObjectMapper();
+
         OAuthTokenResponse tokenResponse = objectMapper.readValue(response.getBody().asString(), OAuthTokenResponse.class);
 
         //System.out.println("Response Body: " + response.getBody().asString());
