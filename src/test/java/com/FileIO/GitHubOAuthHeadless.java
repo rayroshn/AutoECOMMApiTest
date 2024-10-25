@@ -61,8 +61,13 @@ public class GitHubOAuthHeadless {
         String textIntegrator = driver.findElement(By.xpath("//*[@id=\"login\"]/div[3]/div/p/strong[2]")).getText().trim();
         System.out.println("textIntegrator = " + textIntegrator);
         driver.findElement(By.id("login_field")).sendKeys("rayroshn@gmail.com");
-        
+        String login_field = driver.findElement(By.id("login_field")).getAttribute("value");
+        System.out.println("login_field = " + login_field);
+
         driver.findElement(By.id("password")).sendKeys("Pardegand#!!4u");
+        String password = driver.findElement(By.id("password")).getAttribute("value");
+        System.out.println("password = " + password);
+
         String passKey = driver.findElement(By.xpath("//*[@id=\"login\"]/div[4]/webauthn-subtle/p/button/span/span")).getText().trim();
         System.out.println("passKey = " + passKey);
         driver.findElement(By.xpath("//*[@id=\"login\"]/div[3]/form/div/input[13]")).click();
