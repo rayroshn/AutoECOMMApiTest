@@ -32,7 +32,7 @@ public class GitHubOAuthHeadless {
         options.addArguments("--disable-software-rasterizer");  // Forces Chrome to use only software rendering
 
         // Start Chrome Driver
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(options);
 
 
         // Navigate to the authorization URL
