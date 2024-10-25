@@ -61,9 +61,7 @@ public class GitHubOAuthHeadless {
 
        Thread.sleep(2);
 
-        driver.findElement(By.id("login_field")).sendKeys("rayroshn@gmail.com");
-        driver.findElement(By.id("password")).sendKeys("Pardegand#!!4u");
-        driver.findElement(By.xpath("//*[@id=\"login\"]/div[3]/form/div/input[13]")).click();
+
 
         String redirectUrls = driver.getCurrentUrl();
         System.out.println("Redirect URL new: " + redirectUrls);
