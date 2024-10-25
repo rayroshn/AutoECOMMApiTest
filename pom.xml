@@ -27,6 +27,7 @@
     </properties>
 
     <dependencies>
+
         <!-- Rest Assured for API testing -->
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -138,6 +139,20 @@
             <artifactId>allure-rest-assured</artifactId>
             <version>${allure.rest.assured.version}</version>
         </dependency>
+
+            <!-- Selenium Java -->
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-java</artifactId>
+                <version>4.21.0</version> <!-- Check for the latest version on Maven Central -->
+            </dependency>
+
+            <!-- WebDriver Manager to automatically manage browser drivers -->
+
+            <!-- Optional: Add JUnit or TestNG for testing purposes -->
+
+
+
     </dependencies>
 
     <build>
@@ -166,8 +181,10 @@
                         </property>
                     </systemProperties>
                     <suiteXmlFiles>
-                       <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-                        <suiteXmlFile>src/test/resources/file-io-tests.xml</suiteXmlFile>
+
+                      <suiteXmlFile>src/test/resources/file-io-tests.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/oAuthTest.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <testFailureIgnore>true</testFailureIgnore>
                     <properties>

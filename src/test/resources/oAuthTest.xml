@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OAuth Test Suite" parallel="false">
+    <test verbose="2" preserve-order="true" name="oAuthTest">
+        <classes>
+            <class name="com.FileIO.GitHubOAuthTest" >
+                <methods>
+                    <include name="getOAuthToken"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
+
