@@ -61,7 +61,10 @@ public class GitHubOAuthHeadless {
         String textIntegrator = driver.findElement(By.xpath("//*[@id=\"login\"]/div[3]/div/p/strong[2]")).getText().trim();
         System.out.println("textIntegrator = " + textIntegrator);
         driver.findElement(By.id("login_field")).sendKeys("rayroshn@gmail.com");
+        
         driver.findElement(By.id("password")).sendKeys("Pardegand#!!4u");
+        String passKey = driver.findElement(By.xpath("//*[@id=\"login\"]/div[4]/webauthn-subtle/p/button/span/span")).getText().trim();
+        System.out.println("passKey = " + passKey);
         driver.findElement(By.xpath("//*[@id=\"login\"]/div[3]/form/div/input[13]")).click();
 
        Thread.sleep(2);
@@ -74,6 +77,7 @@ public class GitHubOAuthHeadless {
 
 
         String[] parts = redirectUrls.split("=");
+        System.out.println("parts = " + parts[1]);
 
         // The code part is in the second element (index 1)
         if (parts.length > 1) {
