@@ -35,16 +35,19 @@ jobs:
 
       - name: Set up Chrome
         run: |
-            sudo apt-get update
-            sudo apt-get install -y google-chrome-stable
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
 
       - name: Set up xvfb
         run: |
           sudo apt-get install xvfb
           export DISPLAY=:99
           Xvfb :99 -ac -screen 0 1280x1024x16 &
+        shell: bash
 
       - name: Build and Test with Maven
+        env:
+          DISPLAY: :99
         run: mvn clean test allure:report
         shell: bash
 
@@ -78,7 +81,6 @@ jobs:
           name: test-logs
           path: src/test/resources/Log/*.log
 
-      # Step to retrieve Allure history from the gh-pages branches
       - name: Get Allure history from gh-pages
         uses: actions/checkout@v3
         if: always()
@@ -133,4 +135,3 @@ jobs:
             echo "GitHub Pages seems to be deployed successfully."
           fi
         continue-on-error: true
-
