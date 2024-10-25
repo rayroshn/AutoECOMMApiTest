@@ -23,10 +23,13 @@ public class GitHubOAuthHeadless {
 
       //WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new"); // Optional: Run in headless mode
+        options.addArguments("--headless");  // Use the original --headless flag
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");  // Disables GPU acceleration, helpful for CI environments
+        options.addArguments("--disable-dev-shm-usage");  // Reduces resource usage for shared memory
+        options.addArguments("--window-size=1920,1080");  // Set window size to avoid viewport issues
+        options.addArguments("--disable-software-rasterizer");  // Forces Chrome to use only software rendering
 
         // Start Chrome Driver
         WebDriver driver = new ChromeDriver();
