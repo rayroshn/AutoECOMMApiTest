@@ -38,6 +38,7 @@ public class GitHubOAuthHeadless {
 
         // Navigate to the authorization URL
         String authorizationUrl = "https://github.com/login/oauth/authorize?client_id=Ov23lie7ZhQOcstacB8G&redirect_uri=https://github.com/callback&scope=user";
+        https://github.com/login?client_id=Ov23lie7ZhQOcstacB8G&return_to=%2Flogin%2Foauth%2Fauthorize%3Fclient_id%3DOv23lie7ZhQOcstacB8G%26redirect_uri%3Dhttps%253A%252F%252Fgithub.com%252Fcallback%26scope%3Duser
         driver.get(authorizationUrl);
 
         // Add logic to fill in credentials and click the authorization button
@@ -56,6 +57,9 @@ public class GitHubOAuthHeadless {
 
         // Extract authorization code and exchange it for an access token...
 
+        Thread.sleep(2);
+        String textIntegrator = driver.findElement(By.xpath("//*[@id=\"login\"]/div[3]/div/p/strong[2]")).getText().trim();
+        System.out.println("textIntegrator = " + textIntegrator);
         driver.findElement(By.id("login_field")).sendKeys("rayroshn@gmail.com");
         driver.findElement(By.id("password")).sendKeys("Pardegand#!!4u");
         driver.findElement(By.xpath("//*[@id=\"login\"]/div[3]/form/div/input[13]")).click();
@@ -82,6 +86,7 @@ public class GitHubOAuthHeadless {
         // Close the browser
         driver.quit();
 
+        System.out.println("Returning Authorization Code ....... : " + code);
         return code;
     }
 }
