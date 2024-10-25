@@ -30,6 +30,7 @@ public class GitHubOAuthHeadless {
         options.addArguments("--disable-dev-shm-usage");  // Reduces resource usage for shared memory
         options.addArguments("--window-size=1920,1080"); */ // Set window size to avoid viewport issues
         options.addArguments("--disable-software-rasterizer");  // Forces Chrome to use only software rendering
+        options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36");
 
         // Start Chrome Driver
         WebDriver driver = new ChromeDriver(options);
