@@ -4,11 +4,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 
 public class GitHubOAuthHeadless {
 
     String code;
+
+    public static final Logger logger = LoggerFactory.getLogger(GitHubOAuthHeadless.class);
 
     @Test
     public void testAuthCode() throws InterruptedException {
@@ -71,13 +75,10 @@ public class GitHubOAuthHeadless {
         String passKey = driver.findElement(By.xpath("//*[@id=\"login\"]/div[4]/webauthn-subtle/p/button/span/span")).getText().trim();
         System.out.println("passKey = " + passKey);
         driver.findElement(By.xpath("//*[@id=\"login\"]/div[3]/form/div/input[13]")).click();
-
+        logger.info("SIGN IN BUTTON CLICKED ");
        Thread.sleep(2);
-
-
-
         String redirectUrls = driver.getCurrentUrl();
-        System.out.println("Redirect URL new: " + redirectUrls);
+        logger.info("Redirect URL new: " + redirectUrls);
 
 
 
