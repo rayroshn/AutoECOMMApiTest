@@ -1,6 +1,7 @@
 package com.conduit.request;
 
 
+import com.config.ConfigReader;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
@@ -15,10 +16,10 @@ public class BaseTest {
     @BeforeSuite
     public void setup()
     {
-        RequestSpecification requestSpecification = new RequestSpecBuilder().setBaseUri("https://api.realworld.io/api/")
+        RequestSpecification requestSpecification = new RequestSpecBuilder().setBaseUri(ConfigReader.getConduitBaseURI())
                 .setContentType(ContentType.JSON).build();
 
-        /*RequestSpecification requestSpecification = new RequestSpecBuilder().setBaseUri("https://api.realworld.io/api/")
+        /*RequestSpecification requestSpecification = new RequestSpecBuilder().setBaseUri(ConfigReader.getConduitBaseURI())
                 .setContentType(ContentType.JSON).addFilter(new ResponseLoggingFilter()).addFilter(new RequestLoggingFilter()).build();*/
 
         RestAssured.requestSpecification =requestSpecification;
