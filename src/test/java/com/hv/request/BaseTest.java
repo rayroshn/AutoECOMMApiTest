@@ -1,5 +1,6 @@
 package com.hv.request;
 
+import com.config.ConfigReader;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -18,7 +19,7 @@ public class BaseTest {
 @BeforeClass
 public void setup()
 {
-    RequestSpecification requestSpecification = new RequestSpecBuilder().setBaseUri("http://localhost:3004")
+    RequestSpecification requestSpecification = new RequestSpecBuilder().setBaseUri(ConfigReader.getHVBaseURI())
             .setContentType(ContentType.JSON).
            addFilter( new RequestLoggingFilter())
             .addFilter(new ResponseLoggingFilter()).build();

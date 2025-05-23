@@ -1,6 +1,7 @@
 package com.conduit.request;
 
 import br.com.six2six.fixturefactory.loader.FixtureFactoryLoader;
+import com.config.ConfigReader;
 import com.conduit.request.ApiTest.articleAPITest;
 import com.conduit.util.tokenUtil;
 import io.restassured.RestAssured;
@@ -83,7 +84,7 @@ public class ApiTestBase {
 
     private static RequestSpecification createRequestSpecification(PrintStream logFile) {
         return new RequestSpecBuilder()
-                .setBaseUri("https://api.realworld.io/api/")
+                .setBaseUri(ConfigReader.getConduitBaseURI())
                 .setContentType(ContentType.JSON)
                 .addFilter(new RequestLoggingFilter(logFile))    // Logs to file
                 .addFilter(new ResponseLoggingFilter(logFile))   // Logs to file
@@ -94,7 +95,7 @@ public class ApiTestBase {
 
     private static RequestSpecification createRequestSpecification(PrintStream logFile, String bearerToken, String authToken) {
         return new RequestSpecBuilder()
-                .setBaseUri("https://api.realworld.io/api/")
+                .setBaseUri(ConfigReader.getConduitBaseURI())
                 .setContentType(ContentType.JSON)
                 .addHeader("Authorization", String.valueOf(bearerToken)).addHeader("authorization","Token " + authToken)  // Apply bearer token to all requests
                 .addFilter(new RequestLoggingFilter(logFile))    // Logs to file
