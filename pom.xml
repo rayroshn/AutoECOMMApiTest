@@ -22,7 +22,7 @@
         <allure.rest.assured.version>2.25.0</allure.rest.assured.version>
         <json.version>20231013</json.version>
         <maven.compiler.plugin.version>3.12.1</maven.compiler.plugin.version>
-        <aspectj.version>1.9.21</aspectj.version>
+        <aspectj.version>1.9.21.1</aspectj.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

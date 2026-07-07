@@ -38,7 +38,7 @@ public class articleAPITest extends ApiTestBase {
     Faker faker = new Faker();
     String title=faker.name().title();
     List<String> description= FakerDataUtil.GET_DESCRIPTION_DATA;
-        String userCsvFilePath= FilePaths.LOGIN_USER_DATA.getPath();
+    String userCsvFilePath= FilePaths.LOGIN_USER_DATA.getPath();
     static String articleDescription;
 
     //Slug Ids
@@ -66,7 +66,7 @@ public class articleAPITest extends ApiTestBase {
         article.setTagList(Arrays.asList("esse","voluptatem"));
         NewArticlePayload newArticlePayload = new NewArticlePayload(article);
 
-        // ObjectMapper for JSON to POJO
+        // ObjectMapper for POJO to Json
         ObjectMapper objectMapper = new ObjectMapper();
         final String articleMainPayload = objectMapper.writeValueAsString(newArticlePayload);
         response = given().body(articleMainPayload)
@@ -146,10 +146,21 @@ public class articleAPITest extends ApiTestBase {
         objectMapper = new ObjectMapper();
         String createNewArticleRequestPayload = objectMapper.writeValueAsString(newArticlePayload);
 
+
+        //Below is the set of lines to validate schema
+        // Load the JSON schema file from the classpath (e.g., from src/test/resources folder)
         InputStream createNewArticleRequestSchema = getClass().getClassLoader().getResourceAsStream("Article_SchemaRequest.json");
+
+        // Convert the input stream (bytes) of the schema file to a raw JSON string and then into a JSONObject
         JSONObject rawSchema= new JSONObject(new String(createNewArticleRequestSchema.readAllBytes()));
+
+        // Load the JSON schema using the SchemaLoader (used for validation)
         Schema schema = SchemaLoader.load(rawSchema);
+
+        // Convert your actual request payload (as a string) into a JSONObject
         JSONObject jsonObject = new JSONObject(createNewArticleRequestPayload);
+        // Validate the request JSON against the schema definition
+        // If the payload doesn't match the schema, a ValidationException will be thrown
         schema.validate(jsonObject);
 
 

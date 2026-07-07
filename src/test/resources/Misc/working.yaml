@@ -3,11 +3,10 @@ name: Run Maven Tests and Deploy Allure Report
 on:
   push:
     branches:
-      # - master
-      - faker-api-feature
-  # pull_request:
-  #   branches:
-  #     - master
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build:
@@ -15,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Set up JDK
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v2
         with:
           java-version: '11'
           distribution: 'temurin'
@@ -28,7 +27,7 @@ jobs:
         shell: bash
 
       - name: Cache Maven packages
-        uses: actions/cache@v4
+        uses: actions/cache@v2
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
@@ -44,13 +43,9 @@ jobs:
           sudo apt-get install xvfb
           export DISPLAY=:99
           Xvfb :99 -ac -screen 0 1280x1024x16 &
-        shell: bash
 
-      - name: Build and Test only fakeStoreApiTest
-        env:
-          DISPLAY: :99
-        # run: mvn clean test allure:report
-        run: mvn -Dtest=fakeStoreApiTest clean test allure:report
+      - name: Build and Test with Maven
+        run: mvn clean test allure:report
         shell: bash
 
       - name: Debug - Check Maven build output
@@ -78,13 +73,14 @@ jobs:
         shell: bash
 
       - name: Upload Log Files
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: test-logs
           path: src/test/resources/Log/*.log
 
+      # Step to retrieve Allure history from the gh-pages branches
       - name: Get Allure history from gh-pages
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         if: always()
         continue-on-error: true
         with:
@@ -92,7 +88,7 @@ jobs:
           path: gh-pages
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: '14'
 
@@ -119,7 +115,7 @@ jobs:
 
       - name: Deploy Allure report to GitHub Pages
         if: always()
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
@@ -137,3 +133,4 @@ jobs:
             echo "GitHub Pages seems to be deployed successfully."
           fi
         continue-on-error: true
+

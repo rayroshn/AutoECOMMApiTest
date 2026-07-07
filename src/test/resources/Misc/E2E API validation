@@ -1,0 +1,168 @@
+import java.util.stream.Collectors;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+
+...
+
+
+
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+
+public class PhoneApiTest {
+
+    @Test
+    public void testPostAndDeserializePhoneList() throws Exception {
+        // Step 1: Manually create POJO
+        Features appleFeatures = new Features();
+        appleFeatures.setScreen_size("6.1 inches");
+        appleFeatures.setMemory("128 GB");
+        appleFeatures.setCamera("12 MP");
+
+        Phone apple = new Phone();
+        apple.setBrand("Apple");
+        apple.setModel("iPhone 13");
+        apple.setFeatures(appleFeatures);
+        apple.setPrice(799);
+
+        List<Phone> phones = new ArrayList<>();
+        phones.add(apple);
+
+        PhoneList phoneListRequest = new PhoneList();
+        phoneListRequest.setPhones(phones);
+
+        // Step 2: Convert POJO to JSON
+        ObjectMapper objectMapper = new ObjectMapper();
+        String jsonBody = objectMapper.writeValueAsString(phoneListRequest);
+
+        // Step 3: POST request
+        Response response = RestAssured
+            .given()
+                .baseUri("https://your.api.endpoint") // Replace with real endpoint
+                .basePath("/phones")                 // Adjust as needed
+                .contentType(ContentType.JSON)
+                .body(jsonBody)
+            .when()
+                .post()
+            .then()
+                .statusCode(200)
+                .extract().response();
+
+        // Step 4: Convert JSON response to POJO
+        PhoneList phoneListResponse = objectMapper.readValue(response.asString(), PhoneList.class);
+
+        // Step 5: Assert response values using Hamcrest
+        assertThat(phoneListResponse.getPhones(), hasSize(1));
+        assertThat(phoneListResponse.getPhones().get(0).getBrand(), is("Apple"));
+        assertThat(phoneListResponse.getPhones().get(0).getFeatures().getCamera(), equalTo("12 MP"));
+    }
+}
+
+// Step 5: Assert all values at once using Hamcrest
+
+// Extract brand list
+List<String> brands = phoneListResponse.getPhones()
+        .stream()
+        .map(Phone::getBrand)
+        .collect(Collectors.toList());
+
+// Extract camera list
+List<String> cameras = phoneListResponse.getPhones()
+        .stream()
+        .map(p -> p.getFeatures().getCamera())
+        .collect(Collectors.toList());
+
+// Extract memory list
+List<String> memories = phoneListResponse.getPhones()
+        .stream()
+        .map(p -> p.getFeatures().getMemory())
+        .collect(Collectors.toList());
+
+// Extract screen sizes
+List<String> screenSizes = phoneListResponse.getPhones()
+        .stream()
+        .map(p -> p.getFeatures().getScreen_size())
+        .collect(Collectors.toList());
+
+// Extract prices
+List<Integer> prices = phoneListResponse.getPhones()
+        .stream()
+        .map(Phone::getPrice)
+        .collect(Collectors.toList());
+
+// Hamcrest assertions - compare complete lists
+assertThat(brands, contains("Apple")); // use containsInAnyOrder(...) for unordered
+assertThat(cameras, contains("12 MP"));
+assertThat(memories, contains("128 GB"));
+assertThat(screenSizes, contains("6.1 inches"));
+assertThat(prices, contains(799));
+
+// More Auto adaptable with no hard code
+// ✅ Extract expected values from request POJO
+List<String> expectedBrands = phoneListRequest.getPhones()
+        .stream()
+        .map(Phone::getBrand)
+        .collect(Collectors.toList());
+
+List<String> expectedCameras = phoneListRequest.getPhones()
+        .stream()
+        .map(p -> p.getFeatures().getCamera())
+        .collect(Collectors.toList());
+
+List<String> expectedMemories = phoneListRequest.getPhones()
+        .stream()
+        .map(p -> p.getFeatures().getMemory())
+        .collect(Collectors.toList());
+
+List<String> expectedScreenSizes = phoneListRequest.getPhones()
+        .stream()
+        .map(p -> p.getFeatures().getScreen_size())
+        .collect(Collectors.toList());
+
+List<Integer> expectedPrices = phoneListRequest.getPhones()
+        .stream()
+        .map(Phone::getPrice)
+        .collect(Collectors.toList());
+
+// ✅ Extract actual values from response POJO
+List<String> actualBrands = phoneListResponse.getPhones()
+        .stream()
+        .map(Phone::getBrand)
+        .collect(Collectors.toList());
+
+List<String> actualCameras = phoneListResponse.getPhones()
+        .stream()
+        .map(p -> p.getFeatures().getCamera())
+        .collect(Collectors.toList());
+
+List<String> actualMemories = phoneListResponse.getPhones()
+        .stream()
+        .map(p -> p.getFeatures().getMemory())
+        .collect(Collectors.toList());
+
+List<String> actualScreenSizes = phoneListResponse.getPhones()
+        .stream()
+        .map(p -> p.getFeatures().getScreen_size())
+        .collect(Collectors.toList());
+
+List<Integer> actualPrices = phoneListResponse.getPhones()
+        .stream()
+        .map(Phone::getPrice)
+        .collect(Collectors.toList());
+
+// ✅ Hamcrest assertions (using expected values dynamically)
+assertThat(actualBrands, is(expectedBrands));
+assertThat(actualCameras, is(expectedCameras));
+assertThat(actualMemories, is(expectedMemories));
+assertThat(actualScreenSizes, is(expectedScreenSizes));
+assertThat(actualPrices, is(expectedPrices));
