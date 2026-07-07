@@ -36,7 +36,7 @@ public class fakeStoreApiTest extends FakeStoreApiTestBase {
 
     private Response postProduct(String payload) {
         return given().contentType("application/json").body(payload)
-                .when().post("https://fakestoreapi.com/products").andReturn();
+                .when().post("/products").andReturn();
     }
 
     private String requireJsonResponse(Response response, String context) {
@@ -69,7 +69,7 @@ public class fakeStoreApiTest extends FakeStoreApiTestBase {
         objectMapper = new ObjectMapper();
         final String productMainPayload = objectMapper.writeValueAsString(product);
         response = given().contentType("application/json").body(productMainPayload)
-                .when().post("https://fakestoreapi.com/products").andReturn();
+                .when().post("/products").andReturn();
 
         int status = response.statusCode();
         Assert.assertTrue(status == 200 || status == 201, "Unexpected status: " + status);
@@ -83,7 +83,7 @@ public class fakeStoreApiTest extends FakeStoreApiTestBase {
         objectMapper = new ObjectMapper();
         final String productMainPayload = objectMapper.writeValueAsString(product);
         response = given().contentType("application/json").body(productMainPayload)
-                .when().post("https://fakestoreapi.com/products").andReturn();
+                .when().post("/products").andReturn();
 
         int status = response.statusCode();
         Assert.assertTrue(status == 200 || status == 201, "Unexpected status: " + status);
@@ -123,7 +123,9 @@ public class fakeStoreApiTest extends FakeStoreApiTestBase {
         objectMapper = new ObjectMapper();
         String createNewProductRequestPayload = objectMapper.writeValueAsString(product);
 
-        String createInvalidProductRequestPayload = createNewProductRequestPayload.replace("\"title\":\"" + title + "\"", "\"title\":123");
+        JSONObject invalidRequestJson = new JSONObject(createNewProductRequestPayload);
+        invalidRequestJson.put("title", 123);
+        String createInvalidProductRequestPayload = invalidRequestJson.toString();
 
         InputStream createNewProductRequestSchema = getClass().getClassLoader().getResourceAsStream("Product_SchemaRequest.json");
         JSONObject rawSchema = new JSONObject(new String(createNewProductRequestSchema.readAllBytes()));
@@ -160,7 +162,9 @@ public class fakeStoreApiTest extends FakeStoreApiTestBase {
         objectMapper = new ObjectMapper();
         String productMainPayload = objectMapper.writeValueAsString(product);
 
-        String productMainPayloadInvalid = productMainPayload.replace("\"title\":\"" + ProductFakerData.GET_PRODUCT_TITLE_DATA + "\"", "\"title\": 123");
+        JSONObject invalidResponsePayload = new JSONObject(productMainPayload);
+        invalidResponsePayload.put("title", 123);
+        String productMainPayloadInvalid = invalidResponsePayload.toString();
 
         // Send invalid payload and validate that response does NOT match schema
         Response resp = postProduct(productMainPayloadInvalid);
