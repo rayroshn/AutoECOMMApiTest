@@ -34,6 +34,28 @@ public class fakeStoreApiTest extends FakeStoreApiTestBase {
     String title = faker.name().title();
     List<String> description = FakerDataUtil.GET_DESCRIPTION_DATA;
 
+    private Response postProduct(String payload) {
+        return given().contentType("application/json").body(payload)
+                .when().post("https://fakestoreapi.com/products").andReturn();
+    }
+
+    private String requireJsonResponse(Response response, String context) {
+        int status = response.statusCode();
+        String body = response.getBody().asString();
+        String contentType = response.getHeader("Content-Type");
+
+        System.err.println("[" + context + "] status=" + status + ", contentType=" + contentType);
+        if (status != 200 && status != 201) {
+            System.err.println("[" + context + "] response body:\n" + body);
+            Assert.fail("[" + context + "] Unexpected status " + status + ". Content-Type=" + contentType + ". Body=" + body);
+        }
+        if (contentType == null || !contentType.toLowerCase().contains("application/json")) {
+            System.err.println("[" + context + "] response body:\n" + body);
+            Assert.fail("[" + context + "] Expected JSON response but got Content-Type=" + contentType + ". Body=" + body);
+        }
+        return body;
+    }
+
     @Step("Create new product")
     @Test
     public void createNewProduct() throws IOException {
@@ -124,11 +146,12 @@ public class fakeStoreApiTest extends FakeStoreApiTestBase {
 
         objectMapper = new ObjectMapper();
         final String productMainPayload = objectMapper.writeValueAsString(product);
-        ValidatableResponse validatableResponse = given().contentType("application/json").body(productMainPayload)
-            .when().post("https://fakestoreapi.com/products").then().assertThat().statusCode(201)
-            .body(JsonSchemaValidator.matchesJsonSchema(createNewProductResponseSchema));
+        Response schemaResponse = postProduct(productMainPayload);
+        String schemaResponseBody = requireJsonResponse(schemaResponse, "createNewProductResponseSchemaValidation");
 
-        Assert.assertNotNull(validatableResponse);
+        JSONObject responseJson = new JSONObject(schemaResponseBody);
+        Schema responseSchema = SchemaLoader.load(new JSONObject(new String(createNewProductResponseSchema.readAllBytes())));
+        responseSchema.validate(responseJson);
     }
 
     @Test(dataProvider = "getProductTemplate", dataProviderClass = ProductDataProvider.class)
@@ -140,10 +163,8 @@ public class fakeStoreApiTest extends FakeStoreApiTestBase {
         String productMainPayloadInvalid = productMainPayload.replace("\"title\":\"" + ProductFakerData.GET_PRODUCT_TITLE_DATA + "\"", "\"title\": 123");
 
         // Send invalid payload and validate that response does NOT match schema
-        Response resp = given().contentType("application/json").body(productMainPayloadInvalid)
-                .when().post("https://fakestoreapi.com/products").andReturn();
-
-        String respBody = resp.getBody().asString();
+        Response resp = postProduct(productMainPayloadInvalid);
+        String respBody = requireJsonResponse(resp, "createNewProductResponseNegativeSchemaValidation");
         JSONObject rawSchema = new JSONObject(new String(createNewProductResponseSchema.readAllBytes()));
         Schema schema = SchemaLoader.load(rawSchema);
         JSONObject jsonObject = new JSONObject(respBody);

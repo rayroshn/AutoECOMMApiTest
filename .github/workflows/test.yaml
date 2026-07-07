@@ -46,6 +46,17 @@ jobs:
           Xvfb :99 -ac -screen 0 1280x1024x16 &
         shell: bash
 
+      - name: Diagnose Fake Store response from runner
+        run: |
+          echo "Checking external Fake Store endpoint from GitHub Actions..."
+          curl -i -sS -X POST https://fakestoreapi.com/products \
+            -H "Content-Type: application/json" \
+            --data '{"title":"ci-diagnostic","price":0.1,"description":"ci-diagnostic","category":"string","image":"http://example.com"}' \
+            -o /tmp/fake-store-response.txt
+          echo "---- response ----"
+          cat /tmp/fake-store-response.txt
+        shell: bash
+
       - name: Build and Test only fakeStoreApiTest
         env:
           DISPLAY: :99
