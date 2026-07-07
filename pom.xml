@@ -186,7 +186,7 @@
                         <suiteXmlFile>src/test/resources/oAuthTest.xml</suiteXmlFile>
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <testFailureIgnore>false</testFailureIgnore>
                     <properties>
                         <property>
                             <name>surefire.testng.verbose</name>

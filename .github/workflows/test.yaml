@@ -61,7 +61,9 @@ jobs:
         env:
           DISPLAY: :99
         # run: mvn clean test allure:report
-        run: mvn -Dtest=fakeStoreApiTest clean test allure:report
+        run: |
+          set -o pipefail
+          mvn -Dtest=fakeStoreApiTest clean test allure:report
         shell: bash
 
       - name: Debug - Check Maven build output
