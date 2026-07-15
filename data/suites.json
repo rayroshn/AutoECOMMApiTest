@@ -1,0 +1,95 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Surefire suite",
+    "children" : [ {
+      "name" : "Surefire test",
+      "children" : [ {
+        "name" : "com.conduit.request.ApiTest.fakeStoreApiTest",
+        "children" : [ {
+          "name" : "createNewProduct",
+          "uid" : "954bac8467f2d6e4",
+          "parentUid" : "e217cd2870c1830d7d3652053ca3ddbd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1784116132267,
+            "stop" : 1784116133055,
+            "duration" : 788
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "createNewProductRequestNegativeSchemaValidation",
+          "uid" : "1c2a4e816edf9515",
+          "parentUid" : "e217cd2870c1830d7d3652053ca3ddbd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1784116133081,
+            "stop" : 1784116133138,
+            "duration" : 57
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "createNewProductRequestSchemaValidation",
+          "uid" : "7e055d1064e26e0e",
+          "parentUid" : "e217cd2870c1830d7d3652053ca3ddbd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1784116133142,
+            "stop" : 1784116133144,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "createNewProductResponseNegativeSchemaValidation",
+          "uid" : "9bc6fa69f7fdf7b2",
+          "parentUid" : "e217cd2870c1830d7d3652053ca3ddbd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1784116133153,
+            "stop" : 1784116133185,
+            "duration" : 32
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "com.conduit.request.Pojo.Request.Product@33891646" ]
+        }, {
+          "name" : "createNewProductResponseSchemaValidation",
+          "uid" : "5c1eaaa502420470",
+          "parentUid" : "e217cd2870c1830d7d3652053ca3ddbd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1784116133189,
+            "stop" : 1784116133209,
+            "duration" : 20
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "com.conduit.request.Pojo.Request.Product@6f65a203" ]
+        }, {
+          "name" : "createNewProductViaTemplate",
+          "uid" : "ddf6a117cccbe590",
+          "parentUid" : "e217cd2870c1830d7d3652053ca3ddbd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1784116133213,
+            "stop" : 1784116133228,
+            "duration" : 15
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "com.conduit.request.Pojo.Request.Product@eebc0db" ]
+        } ],
+        "uid" : "e217cd2870c1830d7d3652053ca3ddbd"
+      } ],
+      "uid" : "1fcb2e6ec8e5b5e8a1f2a70b87c80b24"
+    } ],
+    "uid" : "940a09faf31371a51747026c9d178f0a"
+  } ],
+  "name" : "suites"
+}

@@ -1,0 +1,97 @@
+{
+  "uid" : "5c1eaaa502420470",
+  "name" : "createNewProductResponseSchemaValidation",
+  "fullName" : "com.conduit.request.ApiTest.fakeStoreApiTest.createNewProductResponseSchemaValidation",
+  "historyId" : "eb92980a174fe3eed900630b33588503",
+  "time" : {
+    "start" : 1784116133189,
+    "stop" : 1784116133209,
+    "duration" : 20
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setupFakeStore",
+    "time" : {
+      "start" : 1784116131472,
+      "stop" : 1784116132231,
+      "duration" : 759
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownFakeStore",
+    "time" : {
+      "start" : 1784116133230,
+      "stop" : 1784116133233,
+      "duration" : 3
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.conduit.request.ApiTest.fakeStoreApiTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.conduit.request.ApiTest.fakeStoreApiTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createNewProductResponseSchemaValidation"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.conduit.request.ApiTest.fakeStoreApiTest"
+  }, {
+    "name" : "host",
+    "value" : "runnervm5mmn9"
+  }, {
+    "name" : "thread",
+    "value" : "3167@runnervm5mmn9.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "com.conduit.request.Pojo.Request.Product@6f65a203"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5c1eaaa502420470.json",
+  "parameterValues" : [ "com.conduit.request.Pojo.Request.Product@6f65a203" ]
+}
