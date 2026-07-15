@@ -26,7 +26,7 @@ public class GitHubOAuthHeadless {
 
       //WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new");
+       options.addArguments("--headless=new");
         //options.addArguments("--headless");  // Use the original --headless flag
        /* options.addArguments("--remote-allow-origins=*");
         options.addArguments("--no-sandbox");
@@ -68,7 +68,7 @@ public class GitHubOAuthHeadless {
         String login_field = driver.findElement(By.id("login_field")).getAttribute("value");
         System.out.println("login_field = " + login_field);
 
-        driver.findElement(By.id("password")).sendKeys("Pardegand#!!4u");
+        driver.findElement(By.id("password")).sendKeys("Pardegand@!!4u");
         String password = driver.findElement(By.id("password")).getAttribute("value");
         System.out.println("password = " + password);
 

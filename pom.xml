@@ -22,7 +22,7 @@
         <allure.rest.assured.version>2.25.0</allure.rest.assured.version>
         <json.version>20231013</json.version>
         <maven.compiler.plugin.version>3.12.1</maven.compiler.plugin.version>
-        <aspectj.version>1.9.21</aspectj.version>
+        <aspectj.version>1.9.21.1</aspectj.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -104,13 +104,13 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.15.2</version>
+            <version>2.18.8</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.15.2</version>
+            <version>2.18.8</version>
         </dependency>
 
         <dependency>
@@ -186,7 +186,7 @@
                         <suiteXmlFile>src/test/resources/oAuthTest.xml</suiteXmlFile>
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <testFailureIgnore>false</testFailureIgnore>
                     <properties>
                         <property>
                             <name>surefire.testng.verbose</name>
